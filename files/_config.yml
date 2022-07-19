@@ -1,0 +1,22 @@
+title: Option informatique en MP
+author: Quentin Fortier
+
+execute:
+  execute_notebooks: 'off'
+
+html:
+  home_page_in_navbar: false
+  use_edit_page_button: true
+  use_repository_button: true
+  use_issues_button: true
+  baseurl: https://mp-info.github.io
+  extra_navbar: ""
+
+repository:
+  url: https://github.com/mp-info/mp-info.github.io 
+  path_to_book: files
+  branch: main
+
+launch_buttons:
+  basthon_url: "https://notebook.basthon.fr/ocaml"
+  thebe: true
