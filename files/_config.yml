@@ -1,5 +1,6 @@
 title: Option informatique en MP
 author: Quentin Fortier
+logo: chameau.png
 
 execute:
   execute_notebooks: 'off'
