@@ -5,4 +5,4 @@ root: intro
 options:
   numbered: True
 chapters:
-- file: 1_revisions/revisions_ocaml.md
+- file: 1_revisions/revisions_ocaml.ipynb
