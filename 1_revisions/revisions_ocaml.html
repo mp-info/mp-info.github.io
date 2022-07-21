@@ -158,6 +158,71 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/mp-info/mp-info.github.io/main?urlpath=tree/files/1_revisions/revisions_ocaml.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://notebook.basthon.fr/ocaml/?from=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/1_revisions/revisions_ocaml.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Basthon"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_basthon.svg">
+  </span>
+<span class="headerbtn__text-container">Basthon</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -214,7 +279,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/mp-info/mp-info.github.io/edit/main/files/1_revisions/revisions_ocaml.md"
+        <a href="https://github.com/mp-info/mp-info.github.io/edit/main/files/1_revisions/revisions_ocaml.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -242,7 +307,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/1_revisions/revisions_ocaml.md"
+        <a href="../_sources/1_revisions/revisions_ocaml.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -253,7 +318,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="headerbtn__text-container">.ipynb</span>
 </a>
 
       </li>
@@ -305,7 +370,29 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="revisions-ocaml">
 <h1><span class="section-number">1. </span>Révisions OCaml<a class="headerlink" href="#revisions-ocaml" title="Permalink to this headline">#</a></h1>
-<iframe src=https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/1_revisions/revisions_ocaml.pdf#zoom=page-fit&pagemode=none height=500 width=100% allowfullscreen></iframe>
+<iframe src=https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/1_revisions/revisions_ocaml.pdf#zoom=page-fit&pagemode=none height=500 width=100% allowfullscreen></iframe><div class="admonition-exercice admonition">
+<p class="admonition-title">Exercice</p>
+<p>Que vaut <code class="docutils literal notranslate"><span class="pre">l</span></code> après avoir exécuté le code suivant?</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">l</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">2</span><span class="o">;</span> <span class="mi">3</span><span class="o">]</span> <span class="k">in</span>
+<span class="mi">0</span><span class="o">::</span><span class="n">l</span>
+</pre></div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p><code class="docutils literal notranslate"><span class="pre">l</span></code> vaut toujours <code class="docutils literal notranslate"><span class="pre">[1;</span> <span class="pre">2;</span> <span class="pre">3]</span></code> : écrire <code class="docutils literal notranslate"><span class="pre">e::l</span></code> ne modifie pas <code class="docutils literal notranslate"><span class="pre">l</span></code>.</p>
+</div>
+</div>
+<div class="admonition-exercice admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>Réimplémenter <code class="docutils literal notranslate"><span class="pre">List.map</span></code>, <code class="docutils literal notranslate"><span class="pre">List.filter</span></code>, <code class="docutils literal notranslate"><span class="pre">List.init</span></code>.</p></li>
+<li><p>Calculer la liste des carrés des entiers pairs entre 0 et 10.</p></li>
+</ol>
+</div>
+<div class="admonition-exercice admonition">
+<p class="admonition-title">Exercice</p>
+<p>Redéfinir List.rev à l’aide de <code class="docutils literal notranslate"><span class="pre">List.fold_left</span></code>.</p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -317,16 +404,16 @@ title="Print to PDF"
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "ocaml-jupyter"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "ocaml-jupyter",
             path: "./1_revisions"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'ocaml-jupyter'</script>
 
               </div>
               
