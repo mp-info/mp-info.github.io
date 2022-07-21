@@ -4,6 +4,5 @@ format: jb-book
 root: intro
 options:
   numbered: True
-parts:
-  - caption: Révisions
-    file: 1_revisions/revisions_ocaml.md
+chapters:
+- file: 1_revisions/revisions_ocaml.md
