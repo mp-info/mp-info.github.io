@@ -9,10 +9,13 @@ jobs:
   deploy-book:
     runs-on: ubuntu-latest
     container:
-      image: qfortier/jupyter-book
+      image: qfortier/jb
     steps:
     - uses: actions/checkout@v2
 
+    - name: Add notes
+      run: python /run.py files
+    
     - name: Build the book
       run: jupyter-book build files
 
