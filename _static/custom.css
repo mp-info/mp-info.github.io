@@ -5,5 +5,9 @@
 
 .highlight-default .highlight pre {
     border-left-color: #ccc;
-    border-left-width: 1px;
+    border-width: 0px;
+}
+
+h1 {
+    text-align: center;
 }
