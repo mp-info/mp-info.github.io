@@ -9,7 +9,7 @@ jobs:
   deploy-book:
     runs-on: ubuntu-latest
     container:
-      image: qfortier/jb
+      image: qfortier/jb-addnote
     steps:
     - uses: actions/checkout@v2
 
