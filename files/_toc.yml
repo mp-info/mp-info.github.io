@@ -4,5 +4,7 @@ format: jb-book
 root: intro
 options:
   numbered: True
-chapters:
-- file: 1_revisions/revisions_ocaml.ipynb
+parts:
+  - caption: Introduction
+    chapters:
+    - file: 1_revisions/revisions_ocaml.ipynb
