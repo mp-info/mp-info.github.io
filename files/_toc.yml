@@ -8,3 +8,7 @@ parts:
   - caption: Introduction
     chapters:
     - file: 1_revisions/revisions_ocaml.ipynb
+  - caption: Arbres et graphes
+    chapters:
+      - sections:
+        - file: 2_arbre_graphe/1_parcours/1_dfs.ipynb
