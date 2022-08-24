@@ -9,19 +9,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "repository"
-msgstr "资料库"
+msgstr "仓库"
 
 msgid "Print to PDF"
-msgstr "列印成PDF"
+msgstr "列印成 PDF"
 
 msgid "By the"
-msgstr "由"
+msgstr "作者："
 
 msgid "By"
-msgstr "通过"
+msgstr "作者："
 
 msgid "Source repository"
-msgstr "源库"
+msgstr "源码库"
 
 msgid "Copyright"
 msgstr "版权"
@@ -36,13 +36,13 @@ msgid "Download source file"
 msgstr "下载源文件"
 
 msgid "Edit this page"
-msgstr "编辑这个页面"
+msgstr "编辑此页面"
 
 msgid "Toggle navigation"
-msgstr "切换导航"
+msgstr "显示或隐藏导航栏"
 
 msgid "Theme by the"
-msgstr "主题由"
+msgstr "主题作者："
 
 msgid "previous page"
 msgstr "上一页"
@@ -54,22 +54,25 @@ msgid "Download this page"
 msgstr "下载此页面"
 
 msgid "Contents"
-msgstr "内容"
+msgstr "目录"
 
 msgid "Sphinx Book Theme"
-msgstr "狮身人面像书主题"
+msgstr "Sphinx Book 主题"
 
 msgid "Download notebook file"
 msgstr "下载笔记本文件"
 
 msgid "Launch"
-msgstr "发射"
+msgstr "启动"
 
 msgid "open issue"
-msgstr "公开的问题"
+msgstr "创建议题"
 
 msgid "Open an issue"
-msgstr "打开一个问题"
+msgstr "创建议题"
+
+msgid "suggest edit"
+msgstr "提出修改建议"
 
 msgid "Last updated on"
 msgstr "上次更新时间："
