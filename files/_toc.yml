@@ -10,6 +10,4 @@ parts:
     - file: 1_revisions/revisions_ocaml.ipynb
   - caption: Arbres et graphes
     chapters:
-      - file: 2_arbre_graphe/2_arbre_graph.md
-        sections:
-          - file: 2_arbre_graphe/1_parcours/1_dfs.ipynb
+      - file: 2_arbre_graphe/1_parcours/1_dfs.ipynb

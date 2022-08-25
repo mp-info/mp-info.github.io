@@ -22,6 +22,5 @@ repository:
   branch: main
 
 launch_buttons:
-  binder_url: ""
-  basthon_url: "https://notebook.basthon.fr/ocaml"
+  basthon_url: "https://notebook.basthon.fr"
   thebe: false
