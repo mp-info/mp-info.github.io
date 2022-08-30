@@ -5,9 +5,10 @@ root: intro
 options:
   numbered: True
 parts:
-  - caption: Introduction
+  - caption: Révisions OCaml
     chapters:
     - file: 1_revisions/revisions_ocaml.ipynb
+    - file: 1_revisions/ocaml.ipynb
   - caption: Arbres et graphes
     chapters:
       - file: 2_arbre_graphe/1_parcours/1_dfs.ipynb
