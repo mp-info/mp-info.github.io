@@ -8,74 +8,74 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "repository"
-msgstr "хранилище"
-
-msgid "Print to PDF"
-msgstr "Распечатать в PDF"
-
-msgid "By the"
-msgstr "Посредством"
-
-msgid "By"
-msgstr "По"
-
-msgid "Source repository"
-msgstr "Исходный репозиторий"
-
-msgid "Copyright"
-msgstr "авторское право"
-
-msgid "Search this book..."
-msgstr "Искать в этой книге ..."
+msgid "Download notebook file"
+msgstr "Скачать файл записной книжки"
 
 msgid "Fullscreen mode"
 msgstr "Полноэкранный режим"
 
-msgid "Download source file"
-msgstr "Скачать исходный файл"
-
-msgid "Edit this page"
-msgstr "Редактировать эту страницу"
-
-msgid "Toggle navigation"
-msgstr "Переключить навигацию"
-
 msgid "Theme by the"
 msgstr "Тема от"
 
-msgid "previous page"
-msgstr "Предыдущая страница"
-
-msgid "Search the docs ..."
-msgstr "Искать в документах ..."
+msgid "repository"
+msgstr "хранилище"
 
 msgid "Download this page"
 msgstr "Загрузите эту страницу"
 
-msgid "Contents"
-msgstr "Содержание"
+msgid "By the"
+msgstr "Посредством"
+
+msgid "Copyright"
+msgstr "авторское право"
+
+msgid "Source repository"
+msgstr "Исходный репозиторий"
+
+msgid "previous page"
+msgstr "Предыдущая страница"
+
+msgid "Toggle navigation"
+msgstr "Переключить навигацию"
 
 msgid "Sphinx Book Theme"
 msgstr "Тема книги Сфинкс"
 
-msgid "Download notebook file"
-msgstr "Скачать файл записной книжки"
+msgid "Contents"
+msgstr "Содержание"
 
-msgid "Launch"
-msgstr "Запуск"
-
-msgid "open issue"
-msgstr "открытый вопрос"
-
-msgid "Open an issue"
-msgstr "Открыть вопрос"
-
-msgid "suggest edit"
-msgstr "предложить редактировать"
+msgid "Search this book..."
+msgstr "Искать в этой книге ..."
 
 msgid "Last updated on"
 msgstr "Последнее обновление"
 
+msgid "Edit this page"
+msgstr "Редактировать эту страницу"
+
 msgid "next page"
 msgstr "Следующая страница"
+
+msgid "By"
+msgstr "По"
+
+msgid "Print to PDF"
+msgstr "Распечатать в PDF"
+
+msgid "Open an issue"
+msgstr "Открыть вопрос"
+
+msgid "Launch"
+msgstr "Запуск"
+
+msgid "Download source file"
+msgstr "Скачать исходный файл"
+
+msgid "Search the docs ..."
+msgstr "Искать в документах ..."
+
+msgid "open issue"
+msgstr "открытый вопрос"
+
+msgid "suggest edit"
+msgstr "предложить редактировать"

@@ -8,74 +8,74 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "repository"
-msgstr "förvar"
-
-msgid "Print to PDF"
-msgstr "Skriv ut till PDF"
-
-msgid "By the"
-msgstr "Vid"
-
-msgid "By"
-msgstr "Förbi"
-
-msgid "Source repository"
-msgstr "Källförvar"
-
-msgid "Copyright"
-msgstr "upphovsrätt"
-
-msgid "Search this book..."
-msgstr "Sök i den här boken ..."
+msgid "Download notebook file"
+msgstr "Ladda ner anteckningsbokfilen"
 
 msgid "Fullscreen mode"
 msgstr "Fullskärmsläge"
 
-msgid "Download source file"
-msgstr "Ladda ner källfil"
-
-msgid "Edit this page"
-msgstr "Redigera den här sidan"
-
-msgid "Toggle navigation"
-msgstr "Växla navigering"
-
 msgid "Theme by the"
 msgstr "Tema av"
 
-msgid "previous page"
-msgstr "föregående sida"
-
-msgid "Search the docs ..."
-msgstr "Sök i dokumenten ..."
+msgid "repository"
+msgstr "förvar"
 
 msgid "Download this page"
 msgstr "Ladda ner den här sidan"
 
-msgid "Contents"
-msgstr "Innehåll"
+msgid "By the"
+msgstr "Vid"
+
+msgid "Copyright"
+msgstr "upphovsrätt"
+
+msgid "Source repository"
+msgstr "Källförvar"
+
+msgid "previous page"
+msgstr "föregående sida"
+
+msgid "Toggle navigation"
+msgstr "Växla navigering"
 
 msgid "Sphinx Book Theme"
 msgstr "Sphinx boktema"
 
-msgid "Download notebook file"
-msgstr "Ladda ner anteckningsbokfilen"
+msgid "Contents"
+msgstr "Innehåll"
 
-msgid "Launch"
-msgstr "Lansera"
-
-msgid "open issue"
-msgstr "öppet problem"
-
-msgid "Open an issue"
-msgstr "Öppna ett problem"
-
-msgid "suggest edit"
-msgstr "föreslå redigering"
+msgid "Search this book..."
+msgstr "Sök i den här boken ..."
 
 msgid "Last updated on"
 msgstr "Senast uppdaterad den"
 
+msgid "Edit this page"
+msgstr "Redigera den här sidan"
+
 msgid "next page"
 msgstr "nästa sida"
+
+msgid "By"
+msgstr "Förbi"
+
+msgid "Print to PDF"
+msgstr "Skriv ut till PDF"
+
+msgid "Open an issue"
+msgstr "Öppna ett problem"
+
+msgid "Launch"
+msgstr "Lansera"
+
+msgid "Download source file"
+msgstr "Ladda ner källfil"
+
+msgid "Search the docs ..."
+msgstr "Sök i dokumenten ..."
+
+msgid "open issue"
+msgstr "öppet problem"
+
+msgid "suggest edit"
+msgstr "föreslå redigering"

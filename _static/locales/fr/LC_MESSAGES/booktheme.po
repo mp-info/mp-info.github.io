@@ -8,74 +8,74 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "repository"
-msgstr "dépôt"
-
-msgid "Print to PDF"
-msgstr "Imprimer au format PDF"
-
-msgid "By the"
-msgstr "Par le"
-
-msgid "By"
-msgstr "Par"
-
-msgid "Source repository"
-msgstr "Dépôt source"
-
-msgid "Copyright"
-msgstr "droits d'auteur"
-
-msgid "Search this book..."
-msgstr "Rechercher dans ce livre ..."
+msgid "Download notebook file"
+msgstr "Télécharger le fichier notebook"
 
 msgid "Fullscreen mode"
 msgstr "Mode plein écran"
 
-msgid "Download source file"
-msgstr "Télécharger le fichier source"
-
-msgid "Edit this page"
-msgstr "Modifier cette page"
-
-msgid "Toggle navigation"
-msgstr "Basculer la navigation"
-
 msgid "Theme by the"
 msgstr "Thème par le"
 
-msgid "previous page"
-msgstr "page précédente"
-
-msgid "Search the docs ..."
-msgstr "Rechercher dans les documents ..."
+msgid "repository"
+msgstr "dépôt"
 
 msgid "Download this page"
 msgstr "Téléchargez cette page"
 
-msgid "Contents"
-msgstr "Contenu"
+msgid "By the"
+msgstr "Par le"
+
+msgid "Copyright"
+msgstr "droits d'auteur"
+
+msgid "Source repository"
+msgstr "Dépôt source"
+
+msgid "previous page"
+msgstr "page précédente"
+
+msgid "Toggle navigation"
+msgstr "Basculer la navigation"
 
 msgid "Sphinx Book Theme"
 msgstr "Thème du livre Sphinx"
 
-msgid "Download notebook file"
-msgstr "Télécharger le fichier notebook"
+msgid "Contents"
+msgstr "Contenu"
 
-msgid "Launch"
-msgstr "lancement"
-
-msgid "open issue"
-msgstr "signaler un problème"
-
-msgid "Open an issue"
-msgstr "Ouvrez un problème"
-
-msgid "suggest edit"
-msgstr "suggestion de modification"
+msgid "Search this book..."
+msgstr "Rechercher dans ce livre ..."
 
 msgid "Last updated on"
 msgstr "Dernière mise à jour le"
 
+msgid "Edit this page"
+msgstr "Modifier cette page"
+
 msgid "next page"
 msgstr "page suivante"
+
+msgid "By"
+msgstr "Par"
+
+msgid "Print to PDF"
+msgstr "Imprimer au format PDF"
+
+msgid "Open an issue"
+msgstr "Ouvrez un problème"
+
+msgid "Launch"
+msgstr "lancement"
+
+msgid "Download source file"
+msgstr "Télécharger le fichier source"
+
+msgid "Search the docs ..."
+msgstr "Rechercher dans les documents ..."
+
+msgid "open issue"
+msgstr "signaler un problème"
+
+msgid "suggest edit"
+msgstr "suggestion de modification"

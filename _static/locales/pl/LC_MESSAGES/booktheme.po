@@ -8,74 +8,74 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "repository"
-msgstr "magazyn"
-
-msgid "Print to PDF"
-msgstr "Drukuj do PDF"
-
-msgid "By the"
-msgstr "Przez"
-
-msgid "By"
-msgstr "Przez"
-
-msgid "Source repository"
-msgstr "Repozytorium źródłowe"
-
-msgid "Copyright"
-msgstr "prawa autorskie"
-
-msgid "Search this book..."
-msgstr "Przeszukaj tę książkę ..."
+msgid "Download notebook file"
+msgstr "Pobierz plik notatnika"
 
 msgid "Fullscreen mode"
 msgstr "Pełny ekran"
 
-msgid "Download source file"
-msgstr "Pobierz plik źródłowy"
-
-msgid "Edit this page"
-msgstr "Edytuj tę strone"
-
-msgid "Toggle navigation"
-msgstr "Przełącz nawigację"
-
 msgid "Theme by the"
 msgstr "Motyw autorstwa"
 
-msgid "previous page"
-msgstr "Poprzednia strona"
-
-msgid "Search the docs ..."
-msgstr "Przeszukaj dokumenty ..."
+msgid "repository"
+msgstr "magazyn"
 
 msgid "Download this page"
 msgstr "Pobierz tę stronę"
 
-msgid "Contents"
-msgstr "Zawartość"
+msgid "By the"
+msgstr "Przez"
+
+msgid "Copyright"
+msgstr "prawa autorskie"
+
+msgid "Source repository"
+msgstr "Repozytorium źródłowe"
+
+msgid "previous page"
+msgstr "Poprzednia strona"
+
+msgid "Toggle navigation"
+msgstr "Przełącz nawigację"
 
 msgid "Sphinx Book Theme"
 msgstr "Motyw książki Sphinx"
 
-msgid "Download notebook file"
-msgstr "Pobierz plik notatnika"
+msgid "Contents"
+msgstr "Zawartość"
 
-msgid "Launch"
-msgstr "Uruchomić"
-
-msgid "open issue"
-msgstr "otwarty problem"
-
-msgid "Open an issue"
-msgstr "Otwórz problem"
-
-msgid "suggest edit"
-msgstr "zaproponuj edycję"
+msgid "Search this book..."
+msgstr "Przeszukaj tę książkę ..."
 
 msgid "Last updated on"
 msgstr "Ostatnia aktualizacja"
 
+msgid "Edit this page"
+msgstr "Edytuj tę strone"
+
 msgid "next page"
 msgstr "Następna strona"
+
+msgid "By"
+msgstr "Przez"
+
+msgid "Print to PDF"
+msgstr "Drukuj do PDF"
+
+msgid "Open an issue"
+msgstr "Otwórz problem"
+
+msgid "Launch"
+msgstr "Uruchomić"
+
+msgid "Download source file"
+msgstr "Pobierz plik źródłowy"
+
+msgid "Search the docs ..."
+msgstr "Przeszukaj dokumenty ..."
+
+msgid "open issue"
+msgstr "otwarty problem"
+
+msgid "suggest edit"
+msgstr "zaproponuj edycję"

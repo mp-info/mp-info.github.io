@@ -8,74 +8,74 @@ msgstr ""
 "Language: sl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "repository"
-msgstr "odlagališče"
-
-msgid "Print to PDF"
-msgstr "Natisni v PDF"
-
-msgid "By the"
-msgstr "Avtor"
-
-msgid "By"
-msgstr "Avtor"
-
-msgid "Source repository"
-msgstr "Izvorno skladišče"
-
-msgid "Copyright"
-msgstr "avtorske pravice"
-
-msgid "Search this book..."
-msgstr "Poiščite to knjigo ..."
+msgid "Download notebook file"
+msgstr "Prenesite datoteko zvezka"
 
 msgid "Fullscreen mode"
 msgstr "Celozaslonski način"
 
-msgid "Download source file"
-msgstr "Prenesite izvorno datoteko"
-
-msgid "Edit this page"
-msgstr "Uredite to stran"
-
-msgid "Toggle navigation"
-msgstr "Preklopi navigacijo"
-
 msgid "Theme by the"
 msgstr "Tema avtorja"
 
-msgid "previous page"
-msgstr "Prejšnja stran"
-
-msgid "Search the docs ..."
-msgstr "Poiščite dokumente ..."
+msgid "repository"
+msgstr "odlagališče"
 
 msgid "Download this page"
 msgstr "Prenesite to stran"
 
-msgid "Contents"
-msgstr "Vsebina"
+msgid "By the"
+msgstr "Avtor"
+
+msgid "Copyright"
+msgstr "avtorske pravice"
+
+msgid "Source repository"
+msgstr "Izvorno skladišče"
+
+msgid "previous page"
+msgstr "Prejšnja stran"
+
+msgid "Toggle navigation"
+msgstr "Preklopi navigacijo"
 
 msgid "Sphinx Book Theme"
 msgstr "Tema knjige Sphinx"
 
-msgid "Download notebook file"
-msgstr "Prenesite datoteko zvezka"
+msgid "Contents"
+msgstr "Vsebina"
 
-msgid "Launch"
-msgstr "Kosilo"
-
-msgid "open issue"
-msgstr "odprto vprašanje"
-
-msgid "Open an issue"
-msgstr "Odprite številko"
-
-msgid "suggest edit"
-msgstr "predlagajte urejanje"
+msgid "Search this book..."
+msgstr "Poiščite to knjigo ..."
 
 msgid "Last updated on"
 msgstr "Nazadnje posodobljeno dne"
 
+msgid "Edit this page"
+msgstr "Uredite to stran"
+
 msgid "next page"
 msgstr "Naslednja stran"
+
+msgid "By"
+msgstr "Avtor"
+
+msgid "Print to PDF"
+msgstr "Natisni v PDF"
+
+msgid "Open an issue"
+msgstr "Odprite številko"
+
+msgid "Launch"
+msgstr "Kosilo"
+
+msgid "Download source file"
+msgstr "Prenesite izvorno datoteko"
+
+msgid "Search the docs ..."
+msgstr "Poiščite dokumente ..."
+
+msgid "open issue"
+msgstr "odprto vprašanje"
+
+msgid "suggest edit"
+msgstr "predlagajte urejanje"

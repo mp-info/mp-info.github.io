@@ -8,74 +8,74 @@ msgstr ""
 "Language: sk\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "repository"
-msgstr "Úložisko"
-
-msgid "Print to PDF"
-msgstr "Tlač do PDF"
-
-msgid "By the"
-msgstr "Podľa"
-
-msgid "By"
-msgstr "Autor:"
-
-msgid "Source repository"
-msgstr "Zdrojové úložisko"
-
-msgid "Copyright"
-msgstr "Autorské práva"
-
-msgid "Search this book..."
-msgstr "Hľadať v tejto knihe ..."
+msgid "Download notebook file"
+msgstr "Stiahnite si zošit"
 
 msgid "Fullscreen mode"
 msgstr "Režim celej obrazovky"
 
-msgid "Download source file"
-msgstr "Stiahnite si zdrojový súbor"
-
-msgid "Edit this page"
-msgstr "Upraviť túto stránku"
-
-msgid "Toggle navigation"
-msgstr "Prepnúť navigáciu"
-
 msgid "Theme by the"
 msgstr "Téma od"
 
-msgid "previous page"
-msgstr "predchádzajúca strana"
-
-msgid "Search the docs ..."
-msgstr "Hľadať v dokumentoch ..."
+msgid "repository"
+msgstr "Úložisko"
 
 msgid "Download this page"
 msgstr "Stiahnite si túto stránku"
 
-msgid "Contents"
-msgstr "Obsah"
+msgid "By the"
+msgstr "Podľa"
+
+msgid "Copyright"
+msgstr "Autorské práva"
+
+msgid "Source repository"
+msgstr "Zdrojové úložisko"
+
+msgid "previous page"
+msgstr "predchádzajúca strana"
+
+msgid "Toggle navigation"
+msgstr "Prepnúť navigáciu"
 
 msgid "Sphinx Book Theme"
 msgstr "Téma knihy Sfinga"
 
-msgid "Download notebook file"
-msgstr "Stiahnite si zošit"
+msgid "Contents"
+msgstr "Obsah"
 
-msgid "Launch"
-msgstr "Spustiť"
-
-msgid "open issue"
-msgstr "otvorené vydanie"
-
-msgid "Open an issue"
-msgstr "Otvorte problém"
-
-msgid "suggest edit"
-msgstr "navrhnúť úpravu"
+msgid "Search this book..."
+msgstr "Hľadať v tejto knihe ..."
 
 msgid "Last updated on"
 msgstr "Posledná aktualizácia dňa"
 
+msgid "Edit this page"
+msgstr "Upraviť túto stránku"
+
 msgid "next page"
 msgstr "ďalšia strana"
+
+msgid "By"
+msgstr "Autor:"
+
+msgid "Print to PDF"
+msgstr "Tlač do PDF"
+
+msgid "Open an issue"
+msgstr "Otvorte problém"
+
+msgid "Launch"
+msgstr "Spustiť"
+
+msgid "Download source file"
+msgstr "Stiahnite si zdrojový súbor"
+
+msgid "Search the docs ..."
+msgstr "Hľadať v dokumentoch ..."
+
+msgid "open issue"
+msgstr "otvorené vydanie"
+
+msgid "suggest edit"
+msgstr "navrhnúť úpravu"
