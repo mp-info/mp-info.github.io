@@ -21,6 +21,6 @@ repository:
   path_to_book: files
   branch: main
 
-launch_buttons:
+launch_buttons: 
   basthon_url: "https://notebook.basthon.fr"
   thebe: false
