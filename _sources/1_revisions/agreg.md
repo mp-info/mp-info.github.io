@@ -4,7 +4,6 @@
 
 ```{raw} html
 <script
-   <br><hr><br>
    type="text/javascript"
    src="https://utteranc.es/client.js"
    async="async"
