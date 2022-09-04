@@ -13,4 +13,6 @@ parts:
   - caption: Arbres et graphes
     chapters:
       - file: 2_arbre_graphe/0_definition/0_graph_def.md
+        sections: 
+          - file: 2_arbre_graphe/0_definition/td/td_graph_def.md
       - file: 2_arbre_graphe/1_parcours/1_dfs.ipynb
