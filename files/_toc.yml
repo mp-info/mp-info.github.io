@@ -7,9 +7,11 @@ options:
 parts:
   - caption: Révisions OCaml
     chapters:
-    - file: 1_revisions/revisions_ocaml.ipynb
-    - file: 1_revisions/ocaml.ipynb
-    - file: 1_revisions/agreg.md
+      - file: 1_revisions/revisions_ocaml.ipynb
+        sections: 
+          - file: 1_revisions/ocaml.ipynb
+          - file: 1_revisions/agreg.md
+          - file: 1_revisions/ocaml_quizz.md
   - caption: Graphes et arbres
     chapters:
       - file: 2_arbre_graphe/0_definition/0_graph_def.md
