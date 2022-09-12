@@ -463,8 +463,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Parcours en profondeur sur liste d’adjacence
+  <a class="reference internal nav-link" href="#parcours-en-profondeur-sur-matrice-d-adjacence">
+   Parcours en profondeur sur matrice d’adjacence
   </a>
  </li>
 </ul>
@@ -492,8 +492,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Parcours en profondeur sur liste d’adjacence
+  <a class="reference internal nav-link" href="#parcours-en-profondeur-sur-matrice-d-adjacence">
+   Parcours en profondeur sur matrice d’adjacence
   </a>
  </li>
 </ul>
@@ -509,36 +509,7 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="parcours-en-profondeur">
 <h1>Parcours en profondeur<a class="headerlink" href="#parcours-en-profondeur" title="Permalink to this headline">#</a></h1>
 <iframe src=https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/2_arbre_graphe/1_parcours/1_dfs.pdf#zoom=page-fit&pagemode=none height=500 width=100% allowfullscreen></iframe><p>Graphe utilisé pour les exemples :</p>
-<center><img src=https://github.com/cpge-itc/itc1/raw/4be1ee8d9679ffae521c506ad54acb9e6099c614/files/5_graph/tp/tp2/g.png width=200></center><section id="parcours-en-profondeur-sur-liste-d-adjacence">
-<h2>Parcours en profondeur sur liste d’adjacence<a class="headerlink" href="#parcours-en-profondeur-sur-liste-d-adjacence" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">dfs</span> <span class="n">g</span> <span class="n">r</span> <span class="o">=</span>
-	<span class="k">let</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">g</span> <span class="k">in</span>
-    <span class="k">let</span> <span class="n">seen</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="bp">false</span> <span class="k">in</span>
-    <span class="k">let</span> <span class="k">rec</span> <span class="n">aux</span> <span class="n">v</span> <span class="o">=</span>
-        <span class="k">if</span> <span class="n">not</span> <span class="n">seen</span><span class="o">.(</span><span class="n">v</span><span class="o">)</span> <span class="k">then</span> <span class="o">(</span>
-            <span class="n">seen</span><span class="o">.(</span><span class="n">v</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="bp">true</span><span class="o">;</span>
-            <span class="nn">List</span><span class="p">.</span><span class="n">iter</span> <span class="n">aux</span> <span class="o">(</span><span class="n">g</span><span class="o">.(</span><span class="n">v</span><span class="o">))</span>
-        <span class="o">)</span> <span class="k">in</span>
-    <span class="n">aux</span> <span class="n">r</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="n">File</span> <span class="s2">&quot;[5]&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">3</span><span class="p">,</span> <span class="n">characters</span> <span class="mi">26</span><span class="o">-</span><span class="mi">31</span><span class="p">:</span>
-<span class="mi">3</span> <span class="o">|</span>     <span class="n">let</span> <span class="n">seen</span> <span class="o">=</span> <span class="n">Array</span><span class="o">.</span><span class="n">make</span> <span class="n">false</span> <span class="ow">in</span>
-                              <span class="o">^^^^^</span>
-<span class="ne">Error</span>: This expression has type bool but an expression was expected of type
-         <span class="nb">int</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="id1">
-<h2>Parcours en profondeur sur liste d’adjacence<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
+<center><img src=https://github.com/cpge-itc/itc1/raw/4be1ee8d9679ffae521c506ad54acb9e6099c614/files/5_graph/tp/tp2/g.png width=200></center><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">g_mat</span> <span class="o">=</span> <span class="o">[|</span>
     <span class="o">[|</span><span class="mi">0</span><span class="o">;</span> <span class="mi">0</span><span class="o">;</span> <span class="mi">0</span><span class="o">;</span> <span class="mi">0</span><span class="o">;</span> <span class="mi">0</span><span class="o">;</span> <span class="mi">0</span><span class="o">;</span> <span class="mi">1</span><span class="o">|];</span>
@@ -550,7 +521,7 @@ title="Print to PDF"
     <span class="o">[|</span><span class="mi">1</span><span class="o">;</span> <span class="mi">0</span><span class="o">;</span> <span class="mi">0</span><span class="o">;</span> <span class="mi">0</span><span class="o">;</span> <span class="mi">0</span><span class="o">;</span> <span class="mi">0</span><span class="o">;</span> <span class="mi">0</span><span class="o">|];</span>
 <span class="o">|]</span>
 
-<span class="k">let</span> <span class="n">g_adj</span> <span class="o">=</span> <span class="o">[|[</span><span class="mi">6</span><span class="o">];</span> <span class="o">[</span><span class="mi">2</span><span class="o">;</span> <span class="mi">3</span><span class="o">;</span> <span class="mi">4</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">4</span><span class="o">;</span> <span class="mi">5</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">4</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">2</span><span class="o">;</span> <span class="mi">3</span><span class="o">;</span> <span class="mi">5</span><span class="o">];</span> <span class="o">[</span><span class="mi">4</span><span class="o">;</span> <span class="mi">2</span><span class="o">];</span> <span class="o">[</span><span class="mi">0</span><span class="o">]|];;</span>
+<span class="k">let</span> <span class="n">g_adj</span> <span class="o">=</span> <span class="o">[|[</span><span class="mi">6</span><span class="o">];</span> <span class="o">[</span><span class="mi">2</span><span class="o">;</span> <span class="mi">3</span><span class="o">;</span> <span class="mi">4</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">4</span><span class="o">;</span> <span class="mi">5</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">4</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">2</span><span class="o">;</span> <span class="mi">3</span><span class="o">;</span> <span class="mi">5</span><span class="o">];</span> <span class="o">[</span><span class="mi">4</span><span class="o">;</span> <span class="mi">2</span><span class="o">];</span> <span class="o">[</span><span class="mi">0</span><span class="o">]|]</span>
 </pre></div>
 </div>
 </div>
@@ -564,6 +535,113 @@ title="Print to PDF"
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val g_adj : int list array =
   [|[6]; [2; 3; 4]; [1; 4; 5]; [1; 4]; [1; 2; 3; 5]; [4; 2]; [0]|]
+</pre></div>
+</div>
+</div>
+</div>
+<section id="parcours-en-profondeur-sur-liste-d-adjacence">
+<h2>Parcours en profondeur sur liste d’adjacence<a class="headerlink" href="#parcours-en-profondeur-sur-liste-d-adjacence" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">dfs</span> <span class="n">g</span> <span class="n">r</span> <span class="o">=</span>
+	<span class="k">let</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">g</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="n">seen</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="n">n</span> <span class="bp">false</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="k">rec</span> <span class="n">aux</span> <span class="n">v</span> <span class="o">=</span>
+        <span class="k">if</span> <span class="n">not</span> <span class="n">seen</span><span class="o">.(</span><span class="n">v</span><span class="o">)</span> <span class="k">then</span> <span class="o">(</span>
+            <span class="n">seen</span><span class="o">.(</span><span class="n">v</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="bp">true</span><span class="o">;</span>
+            <span class="nn">Printf</span><span class="p">.</span><span class="n">printf</span> <span class="s2">&quot;Sommet %d visité</span><span class="se">\n</span><span class="s2">%!&quot;</span> <span class="n">v</span><span class="o">;</span>
+            <span class="nn">List</span><span class="p">.</span><span class="n">iter</span> <span class="n">aux</span> <span class="o">(</span><span class="n">g</span><span class="o">.(</span><span class="n">v</span><span class="o">))</span>
+        <span class="o">)</span> <span class="k">in</span>
+    <span class="n">aux</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val dfs : int list array -&gt; int -&gt; unit = &lt;fun&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="bp">()</span> <span class="o">=</span> <span class="n">dfs</span> <span class="n">g_adj</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sommet 0 visité
+Sommet 6 visité
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="bp">()</span> <span class="o">=</span> <span class="n">dfs</span> <span class="n">g_adj</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sommet 3 visité
+Sommet 1 visité
+Sommet 2 visité
+Sommet 4 visité
+Sommet 5 visité
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="parcours-en-profondeur-sur-matrice-d-adjacence">
+<h2>Parcours en profondeur sur matrice d’adjacence<a class="headerlink" href="#parcours-en-profondeur-sur-matrice-d-adjacence" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">dfs</span> <span class="n">g</span> <span class="n">r</span> <span class="o">=</span>
+	<span class="k">let</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">g</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="n">seen</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="n">n</span> <span class="bp">false</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="k">rec</span> <span class="n">aux</span> <span class="n">v</span> <span class="o">=</span>
+        <span class="k">if</span> <span class="n">not</span> <span class="n">seen</span><span class="o">.(</span><span class="n">v</span><span class="o">)</span> <span class="k">then</span> <span class="o">(</span>
+            <span class="n">seen</span><span class="o">.(</span><span class="n">v</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="bp">true</span><span class="o">;</span>
+            <span class="nn">Printf</span><span class="p">.</span><span class="n">printf</span> <span class="s2">&quot;Sommet %d visité</span><span class="se">\n</span><span class="s2">%!&quot;</span> <span class="n">v</span><span class="o">;</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">do</span>
+                <span class="k">if</span> <span class="n">g</span><span class="o">.(</span><span class="n">v</span><span class="o">).(</span><span class="n">j</span><span class="o">)</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">then</span> <span class="n">aux</span> <span class="n">j</span>
+            <span class="k">done</span>
+        <span class="o">)</span> <span class="k">in</span>
+    <span class="n">aux</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val dfs : int array array -&gt; int -&gt; unit = &lt;fun&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="bp">()</span> <span class="o">=</span> <span class="n">dfs</span> <span class="n">g_mat</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sommet 0 visité
+Sommet 6 visité
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="bp">()</span> <span class="o">=</span> <span class="n">dfs</span> <span class="n">g_mat</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sommet 3 visité
+Sommet 1 visité
+Sommet 2 visité
+Sommet 4 visité
+Sommet 5 visité
 </pre></div>
 </div>
 </div>
