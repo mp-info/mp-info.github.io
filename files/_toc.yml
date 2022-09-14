@@ -18,6 +18,8 @@ parts:
         sections: 
           - file: 2_arbre_graphe/0_definition/td/td_graph_def.md
       - file: 2_arbre_graphe/1_representation/representation.ipynb
+        sections:
+          - file: 2_arbre_graphe/1_representation/representation_devoir.ipynb
       - file: 2_arbre_graphe/2_parcours/parcours.md
         sections:
           - file: 2_arbre_graphe/2_parcours/1_dfs.ipynb
