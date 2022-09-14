@@ -24,3 +24,4 @@ parts:
         sections:
           - file: 2_arbre_graphe/2_parcours/1_dfs.ipynb
           - file: 2_arbre_graphe/2_parcours/animation_traversal.ipynb
+          - file: 2_arbre_graphe/2_parcours/2_bfs.ipynb
