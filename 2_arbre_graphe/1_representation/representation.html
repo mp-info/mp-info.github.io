@@ -815,9 +815,9 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">g</span> <span class="o">=</span> <span class="nn">MatrixGraph</span><span class="p">.</span><span class="n">empty</span> <span class="mi">4</span><span class="o">;;</span> <span class="c">(* graphe à 4 sommets *)</span>
-<span class="nn">MatrixGraph</span><span class="p">.</span><span class="n">add_edge</span> <span class="mi">0</span> <span class="mi">1</span> <span class="n">g</span><span class="o">;;</span> <span class="c">(* ajout d&#39;une arête entre les sommets *)</span>
+<span class="k">let</span> <span class="bp">()</span> <span class="o">=</span> <span class="nn">MatrixGraph</span><span class="p">.</span><span class="n">add_edge</span> <span class="mi">0</span> <span class="mi">1</span> <span class="n">g</span><span class="o">;;</span> <span class="c">(* ajout d&#39;une arête entre les sommets *)</span>
 <span class="nn">MatrixGraph</span><span class="p">.</span><span class="n">is_edge</span> <span class="mi">0</span> <span class="mi">3</span> <span class="n">g</span><span class="o">;;</span> <span class="c">(* false *)</span>
-<span class="nn">MatrixGraph</span><span class="p">.</span><span class="n">add_edge</span> <span class="mi">0</span> <span class="mi">3</span> <span class="n">g</span><span class="o">;;</span>
+<span class="k">let</span> <span class="bp">()</span> <span class="o">=</span> <span class="nn">MatrixGraph</span><span class="p">.</span><span class="n">add_edge</span> <span class="mi">0</span> <span class="mi">3</span> <span class="n">g</span><span class="o">;;</span>
 <span class="nn">MatrixGraph</span><span class="p">.</span><span class="n">is_edge</span> <span class="mi">0</span> <span class="mi">3</span> <span class="n">g</span><span class="o">;;</span> <span class="c">(* true *)</span>
 </pre></div>
 </div>
@@ -826,13 +826,7 @@ title="Print to PDF"
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val g : MatrixGraph.t = &lt;abstr&gt;
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>- : unit = ()
-</pre></div>
-</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>- : bool = false
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>- : unit = ()
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>- : bool = true
