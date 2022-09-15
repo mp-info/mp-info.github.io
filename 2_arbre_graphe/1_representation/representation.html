@@ -607,12 +607,12 @@ title="Print to PDF"
 <h2>Liste d’adjacence<a class="headerlink" href="#liste-d-adjacence" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">g_adj</span> <span class="o">=</span> <span class="o">[|[</span><span class="mi">6</span><span class="o">];</span> <span class="o">[</span><span class="mi">2</span><span class="o">;</span> <span class="mi">3</span><span class="o">;</span> <span class="mi">4</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">4</span><span class="o">;</span> <span class="mi">5</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">4</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">2</span><span class="o">;</span> <span class="mi">3</span><span class="o">;</span> <span class="mi">5</span><span class="o">];</span> <span class="o">[</span><span class="mi">4</span><span class="o">;</span> <span class="mi">2</span><span class="o">];</span> <span class="o">[</span><span class="mi">0</span><span class="o">]|]</span>
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">g_list</span> <span class="o">=</span> <span class="o">[|[</span><span class="mi">6</span><span class="o">];</span> <span class="o">[</span><span class="mi">2</span><span class="o">;</span> <span class="mi">3</span><span class="o">;</span> <span class="mi">4</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">4</span><span class="o">;</span> <span class="mi">5</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">4</span><span class="o">];</span> <span class="o">[</span><span class="mi">1</span><span class="o">;</span> <span class="mi">2</span><span class="o">;</span> <span class="mi">3</span><span class="o">;</span> <span class="mi">5</span><span class="o">];</span> <span class="o">[</span><span class="mi">4</span><span class="o">;</span> <span class="mi">2</span><span class="o">];</span> <span class="o">[</span><span class="mi">0</span><span class="o">]|]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val g_adj : int list array =
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val g_list : int list array =
   [|[6]; [2; 3; 4]; [1; 4; 5]; [1; 4]; [1; 2; 3; 5]; [4; 2]; [0]|]
 </pre></div>
 </div>
@@ -636,7 +636,7 @@ title="Print to PDF"
 <div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">is_edge</span> <span class="n">g</span> <span class="n">u</span> <span class="n">v</span> <span class="o">=</span> <span class="c">(* teste si g contient l&#39;arête (u, v) *)</span>
     <span class="nn">List</span><span class="p">.</span><span class="n">mem</span> <span class="n">v</span> <span class="n">g</span><span class="o">.(</span><span class="n">u</span><span class="o">);;</span>
 
-<span class="k">let</span> <span class="bp">()</span> <span class="o">=</span> <span class="k">assert</span> <span class="o">(</span><span class="n">is_edge</span> <span class="n">g_adj</span> <span class="mi">4</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">not</span> <span class="o">(</span><span class="n">is_edge</span> <span class="n">g_adj</span> <span class="mi">2</span> <span class="mi">0</span><span class="o">))</span>
+<span class="k">let</span> <span class="bp">()</span> <span class="o">=</span> <span class="k">assert</span> <span class="o">(</span><span class="n">is_edge</span> <span class="n">g_list</span> <span class="mi">4</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">not</span> <span class="o">(</span><span class="n">is_edge</span> <span class="n">g_list</span> <span class="mi">2</span> <span class="mi">0</span><span class="o">))</span>
 </pre></div>
 </div>
 </div>
@@ -711,8 +711,8 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">g_dict</span> <span class="o">=</span> <span class="nn">Hashtbl</span><span class="p">.</span><span class="n">create</span> <span class="mi">42</span><span class="o">;;</span>
-<span class="k">let</span> <span class="bp">()</span> <span class="o">=</span> <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">g_adj</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">do</span>
-    <span class="nn">Hashtbl</span><span class="p">.</span><span class="n">add</span> <span class="n">g_dict</span> <span class="n">i</span> <span class="o">(</span><span class="nn">S</span><span class="p">.</span><span class="n">of_list</span> <span class="n">g_adj</span><span class="o">.(</span><span class="n">i</span><span class="o">))</span>
+<span class="k">let</span> <span class="bp">()</span> <span class="o">=</span> <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">g_list</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">do</span>
+    <span class="nn">Hashtbl</span><span class="p">.</span><span class="n">add</span> <span class="n">g_dict</span> <span class="n">i</span> <span class="o">(</span><span class="nn">S</span><span class="p">.</span><span class="n">of_list</span> <span class="n">g_list</span><span class="o">.(</span><span class="n">i</span><span class="o">))</span>
 <span class="k">done</span>
 </pre></div>
 </div>
