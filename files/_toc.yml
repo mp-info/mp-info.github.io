@@ -11,8 +11,8 @@ parts:
         sections: 
           - file: 1_revisions/ocaml.ipynb
           - file: 1_revisions/agreg.md
-          - file: 1_revisions/ocaml_quizz.md
-  - caption: Graphes et arbres
+          # - file: 1_revisions/ocaml_quizz.md
+  - caption: Rappels sur les graphes
     chapters:
       - file: 2_arbre_graphe/0_definition/0_graph_def.md
         sections: 
