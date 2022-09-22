@@ -1,5 +1,6 @@
 # Arbres et graphes
 
+<html>
     <script 
 	src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js">
 	</script>
@@ -27,3 +28,4 @@
 	1. [ ] Paris
 	1. [ ] Cologne
 </div>
+</html>
