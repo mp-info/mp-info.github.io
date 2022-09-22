@@ -490,6 +490,23 @@ title="Print to PDF"
    Parcours en profondeur sur matrice d’adjacence
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recherche-de-cycle">
+   Recherche de cycle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#graphe-non-oriente">
+     Graphe non-orienté
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#graphe-oriente">
+     Graphe orienté
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
     </nav>
@@ -518,6 +535,23 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#parcours-en-profondeur-sur-matrice-d-adjacence">
    Parcours en profondeur sur matrice d’adjacence
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recherche-de-cycle">
+   Recherche de cycle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#graphe-non-oriente">
+     Graphe non-orienté
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#graphe-oriente">
+     Graphe orienté
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -669,6 +703,69 @@ Sommet 5 visité
 </div>
 </div>
 </div>
+</section>
+<section id="recherche-de-cycle">
+<h2>Recherche de cycle<a class="headerlink" href="#recherche-de-cycle" title="Permalink to this headline">#</a></h2>
+<section id="graphe-non-oriente">
+<h3>Graphe non-orienté<a class="headerlink" href="#graphe-non-oriente" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">has_cycle</span> <span class="n">g</span> <span class="o">=</span> <span class="c">(* g : graphe non orienté représenté par liste d&#39;adjacence *)</span>
+	<span class="k">let</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">g</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="n">pred</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="n">n</span> <span class="o">(-</span><span class="mi">1</span><span class="o">)</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="n">ans</span> <span class="o">=</span> <span class="n">ref</span> <span class="bp">false</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="k">rec</span> <span class="n">aux</span> <span class="n">p</span> <span class="n">u</span> <span class="o">=</span> <span class="c">(* p a permis de découvrir u *)</span>
+        <span class="k">if</span> <span class="n">pred</span><span class="o">.(</span><span class="n">u</span><span class="o">)</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="k">then</span> <span class="o">(</span>
+            <span class="n">pred</span><span class="o">.(</span><span class="n">u</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="n">p</span><span class="o">;</span>
+            <span class="nn">List</span><span class="p">.</span><span class="n">iter</span> <span class="o">(</span><span class="n">aux</span> <span class="n">p</span><span class="o">)</span> <span class="n">g</span><span class="o">.(</span><span class="n">u</span><span class="o">)</span>
+        <span class="o">)</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="n">pred</span><span class="o">.(</span><span class="n">p</span><span class="o">)</span> <span class="o">&lt;&gt;</span> <span class="n">u</span> <span class="k">then</span> <span class="n">ans</span> <span class="o">:=</span> <span class="bp">true</span> <span class="k">in</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">do</span>
+        <span class="n">aux</span> <span class="n">i</span> <span class="n">i</span> <span class="c">(* cherche un cycle depuis le sommet i *)</span>
+    <span class="k">done</span><span class="o">;</span>
+    <span class="o">!</span><span class="n">ans</span><span class="o">;;</span>
+
+<span class="n">has_cycle</span> <span class="n">g_list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val has_cycle : int list array -&gt; bool = &lt;fun&gt;
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>- : bool = true
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="graphe-oriente">
+<h3>Graphe orienté<a class="headerlink" href="#graphe-oriente" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">has_cycle</span> <span class="n">g</span> <span class="o">=</span> <span class="c">(* g : graphe orienté représenté par liste d&#39;adjacence *)</span>
+    <span class="k">let</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">g</span> <span class="k">in</span>
+	<span class="k">let</span> <span class="n">visited</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="n">n</span> <span class="mi">0</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="n">ans</span> <span class="o">=</span> <span class="n">ref</span> <span class="bp">false</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="k">rec</span> <span class="n">aux</span> <span class="n">v</span> <span class="o">=</span> <span class="k">match</span> <span class="n">visited</span><span class="o">.(</span><span class="n">v</span><span class="o">)</span> <span class="k">with</span>
+        <span class="o">|</span> <span class="mi">0</span> <span class="o">-&gt;</span> <span class="n">visited</span><span class="o">.(</span><span class="n">v</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="mi">1</span><span class="o">;</span>
+               <span class="nn">List</span><span class="p">.</span><span class="n">iter</span> <span class="n">aux</span> <span class="n">g</span><span class="o">.(</span><span class="n">v</span><span class="o">);</span>
+               <span class="n">visited</span><span class="o">.(</span><span class="n">v</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="mi">2</span>
+        <span class="o">|</span> <span class="mi">1</span> <span class="o">-&gt;</span> <span class="n">ans</span> <span class="o">:=</span> <span class="bp">true</span>
+        <span class="o">|</span> <span class="o">_</span> <span class="o">-&gt;</span> <span class="bp">()</span> <span class="k">in</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">do</span>
+        <span class="n">aux</span> <span class="n">i</span> <span class="c">(* cherche un cycle depuis le sommet i *)</span>
+    <span class="k">done</span><span class="o">;</span>
+    <span class="o">!</span><span class="n">ans</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val has_cycle : int list array -&gt; bool = &lt;fun&gt;
+</pre></div>
+</div>
+</div>
+</div>
 <script
    type="text/javascript"
    src="https://utteranc.es/client.js"
@@ -679,6 +776,7 @@ Sommet 5 visité
    label="💬 comment"
    crossorigin="anonymous"
 /></section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
