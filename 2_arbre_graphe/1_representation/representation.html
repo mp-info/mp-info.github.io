@@ -655,7 +655,7 @@ title="Print to PDF"
 </section>
 <section id="dictionnaire-d-adjacence">
 <h2>Dictionnaire d’adjacence<a class="headerlink" href="#dictionnaire-d-adjacence" title="Permalink to this headline">#</a></h2>
-<p>Ici, on utilise un dictionnaire (par table de hachage) pour représenter le graphe. Chaque élément de la table de hachage sera un ensemble, obtenu avec le module <code class="docutils literal notranslate"><span class="pre">Set</span></code> (utilisant un arbre binaire de recherche).</p>
+<p>Ici, on utilise un dictionnaire (par table de hachage) pour représenter le graphe. Chaque élément de la table de hachage sera un ensemble, obtenu avec le module <code class="docutils literal notranslate"><span class="pre">Set</span></code> (<a class="reference external" href="https://github.com/ocaml/ocaml/blob/trunk/stdlib/set.ml">utilisant un arbre binaire de recherche équilibré</a>).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">module</span> <span class="nc">S</span> <span class="o">=</span> <span class="nn">Set</span><span class="p">.</span><span class="nc">Make</span><span class="o">(</span><span class="nc">Int</span><span class="o">)</span> <span class="c">(* structure d&#39;ensemble d&#39;entiers *)</span>
