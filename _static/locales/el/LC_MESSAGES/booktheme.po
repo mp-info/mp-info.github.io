@@ -8,17 +8,32 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download notebook file"
-msgstr "Λήψη αρχείου σημειωματάριου"
+msgid "Theme by the"
+msgstr "Θέμα από το"
+
+msgid "Edit this page"
+msgstr "Επεξεργαστείτε αυτήν τη σελίδα"
+
+msgid "repository"
+msgstr "αποθήκη"
+
+msgid "Print to PDF"
+msgstr "Εκτύπωση σε PDF"
+
+msgid "open issue"
+msgstr "ανοιχτό ζήτημα"
+
+msgid "Open an issue"
+msgstr "Ανοίξτε ένα ζήτημα"
+
+msgid "previous page"
+msgstr "προηγούμενη σελίδα"
 
 msgid "Fullscreen mode"
 msgstr "ΛΕΙΤΟΥΡΓΙΑ ΠΛΗΡΟΥΣ ΟΘΟΝΗΣ"
 
-msgid "Theme by the"
-msgstr "Θέμα από το"
-
-msgid "repository"
-msgstr "αποθήκη"
+msgid "Search the docs ..."
+msgstr "Αναζήτηση στα έγγραφα ..."
 
 msgid "Download this page"
 msgstr "Λήψη αυτής της σελίδας"
@@ -26,44 +41,20 @@ msgstr "Λήψη αυτής της σελίδας"
 msgid "By the"
 msgstr "Από το"
 
-msgid "Copyright"
-msgstr "Πνευματική ιδιοκτησία"
+msgid "Download notebook file"
+msgstr "Λήψη αρχείου σημειωματάριου"
 
-msgid "Source repository"
-msgstr "Αποθήκη πηγής"
-
-msgid "previous page"
-msgstr "προηγούμενη σελίδα"
-
-msgid "Toggle navigation"
-msgstr "Εναλλαγή πλοήγησης"
-
-msgid "Sphinx Book Theme"
-msgstr "Θέμα βιβλίου Sphinx"
-
-msgid "Contents"
-msgstr "Περιεχόμενα"
+msgid "suggest edit"
+msgstr "προτείνω επεξεργασία"
 
 msgid "Search this book..."
 msgstr "Αναζήτηση σε αυτό το βιβλίο ..."
 
-msgid "Last updated on"
-msgstr "Τελευταία ενημέρωση στις"
+msgid "Source repository"
+msgstr "Αποθήκη πηγής"
 
-msgid "Edit this page"
-msgstr "Επεξεργαστείτε αυτήν τη σελίδα"
-
-msgid "next page"
-msgstr "επόμενη σελίδα"
-
-msgid "By"
-msgstr "Με"
-
-msgid "Print to PDF"
-msgstr "Εκτύπωση σε PDF"
-
-msgid "Open an issue"
-msgstr "Ανοίξτε ένα ζήτημα"
+msgid "Contents"
+msgstr "Περιεχόμενα"
 
 msgid "Launch"
 msgstr "Εκτόξευση"
@@ -71,11 +62,20 @@ msgstr "Εκτόξευση"
 msgid "Download source file"
 msgstr "Λήψη αρχείου προέλευσης"
 
-msgid "Search the docs ..."
-msgstr "Αναζήτηση στα έγγραφα ..."
+msgid "By"
+msgstr "Με"
 
-msgid "open issue"
-msgstr "ανοιχτό ζήτημα"
+msgid "Toggle navigation"
+msgstr "Εναλλαγή πλοήγησης"
 
-msgid "suggest edit"
-msgstr "προτείνω επεξεργασία"
+msgid "Copyright"
+msgstr "Πνευματική ιδιοκτησία"
+
+msgid "next page"
+msgstr "επόμενη σελίδα"
+
+msgid "Last updated on"
+msgstr "Τελευταία ενημέρωση στις"
+
+msgid "Sphinx Book Theme"
+msgstr "Θέμα βιβλίου Sphinx"

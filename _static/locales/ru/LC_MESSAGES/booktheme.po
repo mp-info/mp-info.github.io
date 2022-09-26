@@ -8,17 +8,32 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download notebook file"
-msgstr "Скачать файл записной книжки"
+msgid "Theme by the"
+msgstr "Тема от"
+
+msgid "Edit this page"
+msgstr "Редактировать эту страницу"
+
+msgid "repository"
+msgstr "хранилище"
+
+msgid "Print to PDF"
+msgstr "Распечатать в PDF"
+
+msgid "open issue"
+msgstr "открытый вопрос"
+
+msgid "Open an issue"
+msgstr "Открыть вопрос"
+
+msgid "previous page"
+msgstr "Предыдущая страница"
 
 msgid "Fullscreen mode"
 msgstr "Полноэкранный режим"
 
-msgid "Theme by the"
-msgstr "Тема от"
-
-msgid "repository"
-msgstr "хранилище"
+msgid "Search the docs ..."
+msgstr "Искать в документах ..."
 
 msgid "Download this page"
 msgstr "Загрузите эту страницу"
@@ -26,44 +41,20 @@ msgstr "Загрузите эту страницу"
 msgid "By the"
 msgstr "Посредством"
 
-msgid "Copyright"
-msgstr "авторское право"
+msgid "Download notebook file"
+msgstr "Скачать файл записной книжки"
 
-msgid "Source repository"
-msgstr "Исходный репозиторий"
-
-msgid "previous page"
-msgstr "Предыдущая страница"
-
-msgid "Toggle navigation"
-msgstr "Переключить навигацию"
-
-msgid "Sphinx Book Theme"
-msgstr "Тема книги Сфинкс"
-
-msgid "Contents"
-msgstr "Содержание"
+msgid "suggest edit"
+msgstr "предложить редактировать"
 
 msgid "Search this book..."
 msgstr "Искать в этой книге ..."
 
-msgid "Last updated on"
-msgstr "Последнее обновление"
+msgid "Source repository"
+msgstr "Исходный репозиторий"
 
-msgid "Edit this page"
-msgstr "Редактировать эту страницу"
-
-msgid "next page"
-msgstr "Следующая страница"
-
-msgid "By"
-msgstr "По"
-
-msgid "Print to PDF"
-msgstr "Распечатать в PDF"
-
-msgid "Open an issue"
-msgstr "Открыть вопрос"
+msgid "Contents"
+msgstr "Содержание"
 
 msgid "Launch"
 msgstr "Запуск"
@@ -71,11 +62,20 @@ msgstr "Запуск"
 msgid "Download source file"
 msgstr "Скачать исходный файл"
 
-msgid "Search the docs ..."
-msgstr "Искать в документах ..."
+msgid "By"
+msgstr "По"
 
-msgid "open issue"
-msgstr "открытый вопрос"
+msgid "Toggle navigation"
+msgstr "Переключить навигацию"
 
-msgid "suggest edit"
-msgstr "предложить редактировать"
+msgid "Copyright"
+msgstr "авторское право"
+
+msgid "next page"
+msgstr "Следующая страница"
+
+msgid "Last updated on"
+msgstr "Последнее обновление"
+
+msgid "Sphinx Book Theme"
+msgstr "Тема книги Сфинкс"

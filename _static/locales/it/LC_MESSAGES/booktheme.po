@@ -8,17 +8,32 @@ msgstr ""
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download notebook file"
-msgstr "Scarica il file del taccuino"
+msgid "Theme by the"
+msgstr "Tema di"
+
+msgid "Edit this page"
+msgstr "Modifica questa pagina"
+
+msgid "repository"
+msgstr "repository"
+
+msgid "Print to PDF"
+msgstr "Stampa in PDF"
+
+msgid "open issue"
+msgstr "questione aperta"
+
+msgid "Open an issue"
+msgstr "Apri un problema"
+
+msgid "previous page"
+msgstr "pagina precedente"
 
 msgid "Fullscreen mode"
 msgstr "Modalità schermo intero"
 
-msgid "Theme by the"
-msgstr "Tema di"
-
-msgid "repository"
-msgstr "repository"
+msgid "Search the docs ..."
+msgstr "Cerca nei documenti ..."
 
 msgid "Download this page"
 msgstr "Scarica questa pagina"
@@ -26,44 +41,20 @@ msgstr "Scarica questa pagina"
 msgid "By the"
 msgstr "Dal"
 
-msgid "Copyright"
-msgstr "Diritto d'autore"
+msgid "Download notebook file"
+msgstr "Scarica il file del taccuino"
 
-msgid "Source repository"
-msgstr "Repository di origine"
-
-msgid "previous page"
-msgstr "pagina precedente"
-
-msgid "Toggle navigation"
-msgstr "Attiva / disattiva la navigazione"
-
-msgid "Sphinx Book Theme"
-msgstr "Tema del libro della Sfinge"
-
-msgid "Contents"
-msgstr "Contenuti"
+msgid "suggest edit"
+msgstr "suggerisci modifica"
 
 msgid "Search this book..."
 msgstr "Cerca in questo libro ..."
 
-msgid "Last updated on"
-msgstr "Ultimo aggiornamento il"
+msgid "Source repository"
+msgstr "Repository di origine"
 
-msgid "Edit this page"
-msgstr "Modifica questa pagina"
-
-msgid "next page"
-msgstr "pagina successiva"
-
-msgid "By"
-msgstr "Di"
-
-msgid "Print to PDF"
-msgstr "Stampa in PDF"
-
-msgid "Open an issue"
-msgstr "Apri un problema"
+msgid "Contents"
+msgstr "Contenuti"
 
 msgid "Launch"
 msgstr "Lanciare"
@@ -71,11 +62,20 @@ msgstr "Lanciare"
 msgid "Download source file"
 msgstr "Scarica il file sorgente"
 
-msgid "Search the docs ..."
-msgstr "Cerca nei documenti ..."
+msgid "By"
+msgstr "Di"
 
-msgid "open issue"
-msgstr "questione aperta"
+msgid "Toggle navigation"
+msgstr "Attiva / disattiva la navigazione"
 
-msgid "suggest edit"
-msgstr "suggerisci modifica"
+msgid "Copyright"
+msgstr "Diritto d'autore"
+
+msgid "next page"
+msgstr "pagina successiva"
+
+msgid "Last updated on"
+msgstr "Ultimo aggiornamento il"
+
+msgid "Sphinx Book Theme"
+msgstr "Tema del libro della Sfinge"

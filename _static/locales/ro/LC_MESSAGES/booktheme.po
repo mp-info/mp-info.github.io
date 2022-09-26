@@ -8,17 +8,32 @@ msgstr ""
 "Language: ro\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download notebook file"
-msgstr "Descărcați fișierul notebook"
+msgid "Theme by the"
+msgstr "Tema de"
+
+msgid "Edit this page"
+msgstr "Editați această pagină"
+
+msgid "repository"
+msgstr "repertoriu"
+
+msgid "Print to PDF"
+msgstr "Imprimați în PDF"
+
+msgid "open issue"
+msgstr "problema deschisă"
+
+msgid "Open an issue"
+msgstr "Deschideți o problemă"
+
+msgid "previous page"
+msgstr "pagina anterioară"
 
 msgid "Fullscreen mode"
 msgstr "Modul ecran întreg"
 
-msgid "Theme by the"
-msgstr "Tema de"
-
-msgid "repository"
-msgstr "repertoriu"
+msgid "Search the docs ..."
+msgstr "Căutați documente ..."
 
 msgid "Download this page"
 msgstr "Descarcă această pagină"
@@ -26,44 +41,20 @@ msgstr "Descarcă această pagină"
 msgid "By the"
 msgstr "Langa"
 
-msgid "Copyright"
-msgstr "Drepturi de autor"
+msgid "Download notebook file"
+msgstr "Descărcați fișierul notebook"
 
-msgid "Source repository"
-msgstr "Depozit sursă"
-
-msgid "previous page"
-msgstr "pagina anterioară"
-
-msgid "Toggle navigation"
-msgstr "Comutare navigare"
-
-msgid "Sphinx Book Theme"
-msgstr "Tema Sphinx Book"
-
-msgid "Contents"
-msgstr "Cuprins"
+msgid "suggest edit"
+msgstr "sugerează editare"
 
 msgid "Search this book..."
 msgstr "Căutați în această carte ..."
 
-msgid "Last updated on"
-msgstr "Ultima actualizare la"
+msgid "Source repository"
+msgstr "Depozit sursă"
 
-msgid "Edit this page"
-msgstr "Editați această pagină"
-
-msgid "next page"
-msgstr "pagina următoare"
-
-msgid "By"
-msgstr "De"
-
-msgid "Print to PDF"
-msgstr "Imprimați în PDF"
-
-msgid "Open an issue"
-msgstr "Deschideți o problemă"
+msgid "Contents"
+msgstr "Cuprins"
 
 msgid "Launch"
 msgstr "Lansa"
@@ -71,11 +62,20 @@ msgstr "Lansa"
 msgid "Download source file"
 msgstr "Descărcați fișierul sursă"
 
-msgid "Search the docs ..."
-msgstr "Căutați documente ..."
+msgid "By"
+msgstr "De"
 
-msgid "open issue"
-msgstr "problema deschisă"
+msgid "Toggle navigation"
+msgstr "Comutare navigare"
 
-msgid "suggest edit"
-msgstr "sugerează editare"
+msgid "Copyright"
+msgstr "Drepturi de autor"
+
+msgid "next page"
+msgstr "pagina următoare"
+
+msgid "Last updated on"
+msgstr "Ultima actualizare la"
+
+msgid "Sphinx Book Theme"
+msgstr "Tema Sphinx Book"

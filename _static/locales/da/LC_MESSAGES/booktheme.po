@@ -8,17 +8,32 @@ msgstr ""
 "Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download notebook file"
-msgstr "Download notesbog-fil"
+msgid "Theme by the"
+msgstr "Tema af"
+
+msgid "Edit this page"
+msgstr "Rediger denne side"
+
+msgid "repository"
+msgstr "lager"
+
+msgid "Print to PDF"
+msgstr "Udskriv til PDF"
+
+msgid "open issue"
+msgstr "åbent nummer"
+
+msgid "Open an issue"
+msgstr "Åbn et problem"
+
+msgid "previous page"
+msgstr "forrige side"
 
 msgid "Fullscreen mode"
 msgstr "Fuldskærmstilstand"
 
-msgid "Theme by the"
-msgstr "Tema af"
-
-msgid "repository"
-msgstr "lager"
+msgid "Search the docs ..."
+msgstr "Søg i dokumenterne ..."
 
 msgid "Download this page"
 msgstr "Download denne side"
@@ -26,44 +41,20 @@ msgstr "Download denne side"
 msgid "By the"
 msgstr "Ved"
 
-msgid "Copyright"
-msgstr "ophavsret"
+msgid "Download notebook file"
+msgstr "Download notesbog-fil"
 
-msgid "Source repository"
-msgstr "Kildelager"
-
-msgid "previous page"
-msgstr "forrige side"
-
-msgid "Toggle navigation"
-msgstr "Skift navigation"
-
-msgid "Sphinx Book Theme"
-msgstr "Sphinx bogtema"
-
-msgid "Contents"
-msgstr "Indhold"
+msgid "suggest edit"
+msgstr "foreslå redigering"
 
 msgid "Search this book..."
 msgstr "Søg i denne bog ..."
 
-msgid "Last updated on"
-msgstr "Sidst opdateret den"
+msgid "Source repository"
+msgstr "Kildelager"
 
-msgid "Edit this page"
-msgstr "Rediger denne side"
-
-msgid "next page"
-msgstr "Næste side"
-
-msgid "By"
-msgstr "Ved"
-
-msgid "Print to PDF"
-msgstr "Udskriv til PDF"
-
-msgid "Open an issue"
-msgstr "Åbn et problem"
+msgid "Contents"
+msgstr "Indhold"
 
 msgid "Launch"
 msgstr "Start"
@@ -71,11 +62,20 @@ msgstr "Start"
 msgid "Download source file"
 msgstr "Download kildefil"
 
-msgid "Search the docs ..."
-msgstr "Søg i dokumenterne ..."
+msgid "By"
+msgstr "Ved"
 
-msgid "open issue"
-msgstr "åbent nummer"
+msgid "Toggle navigation"
+msgstr "Skift navigation"
 
-msgid "suggest edit"
-msgstr "foreslå redigering"
+msgid "Copyright"
+msgstr "ophavsret"
+
+msgid "next page"
+msgstr "Næste side"
+
+msgid "Last updated on"
+msgstr "Sidst opdateret den"
+
+msgid "Sphinx Book Theme"
+msgstr "Sphinx bogtema"

@@ -8,17 +8,32 @@ msgstr ""
 "Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download notebook file"
-msgstr "Lataa muistikirjatiedosto"
+msgid "Theme by the"
+msgstr "Teeman tekijä"
+
+msgid "Edit this page"
+msgstr "Muokkaa tätä sivua"
+
+msgid "repository"
+msgstr "arkisto"
+
+msgid "Print to PDF"
+msgstr "Tulosta PDF-tiedostoon"
+
+msgid "open issue"
+msgstr "avoin ongelma"
+
+msgid "Open an issue"
+msgstr "Avaa ongelma"
+
+msgid "previous page"
+msgstr "Edellinen sivu"
 
 msgid "Fullscreen mode"
 msgstr "Koko näytön tila"
 
-msgid "Theme by the"
-msgstr "Teeman tekijä"
-
-msgid "repository"
-msgstr "arkisto"
+msgid "Search the docs ..."
+msgstr "Hae dokumenteista ..."
 
 msgid "Download this page"
 msgstr "Lataa tämä sivu"
@@ -26,44 +41,20 @@ msgstr "Lataa tämä sivu"
 msgid "By the"
 msgstr "Mukaan"
 
-msgid "Copyright"
-msgstr "Tekijänoikeus"
+msgid "Download notebook file"
+msgstr "Lataa muistikirjatiedosto"
 
-msgid "Source repository"
-msgstr "Lähteen arkisto"
-
-msgid "previous page"
-msgstr "Edellinen sivu"
-
-msgid "Toggle navigation"
-msgstr "Vaihda navigointia"
-
-msgid "Sphinx Book Theme"
-msgstr "Sphinx-kirjan teema"
-
-msgid "Contents"
-msgstr "Sisällys"
+msgid "suggest edit"
+msgstr "ehdottaa muokkausta"
 
 msgid "Search this book..."
 msgstr "Hae tästä kirjasta ..."
 
-msgid "Last updated on"
-msgstr "Viimeksi päivitetty"
+msgid "Source repository"
+msgstr "Lähteen arkisto"
 
-msgid "Edit this page"
-msgstr "Muokkaa tätä sivua"
-
-msgid "next page"
-msgstr "seuraava sivu"
-
-msgid "By"
-msgstr "Tekijä"
-
-msgid "Print to PDF"
-msgstr "Tulosta PDF-tiedostoon"
-
-msgid "Open an issue"
-msgstr "Avaa ongelma"
+msgid "Contents"
+msgstr "Sisällys"
 
 msgid "Launch"
 msgstr "Tuoda markkinoille"
@@ -71,11 +62,20 @@ msgstr "Tuoda markkinoille"
 msgid "Download source file"
 msgstr "Lataa lähdetiedosto"
 
-msgid "Search the docs ..."
-msgstr "Hae dokumenteista ..."
+msgid "By"
+msgstr "Tekijä"
 
-msgid "open issue"
-msgstr "avoin ongelma"
+msgid "Toggle navigation"
+msgstr "Vaihda navigointia"
 
-msgid "suggest edit"
-msgstr "ehdottaa muokkausta"
+msgid "Copyright"
+msgstr "Tekijänoikeus"
+
+msgid "next page"
+msgstr "seuraava sivu"
+
+msgid "Last updated on"
+msgstr "Viimeksi päivitetty"
+
+msgid "Sphinx Book Theme"
+msgstr "Sphinx-kirjan teema"

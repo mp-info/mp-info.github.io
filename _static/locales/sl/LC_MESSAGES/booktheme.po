@@ -8,17 +8,32 @@ msgstr ""
 "Language: sl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Download notebook file"
-msgstr "Prenesite datoteko zvezka"
+msgid "Theme by the"
+msgstr "Tema avtorja"
+
+msgid "Edit this page"
+msgstr "Uredite to stran"
+
+msgid "repository"
+msgstr "odlagališče"
+
+msgid "Print to PDF"
+msgstr "Natisni v PDF"
+
+msgid "open issue"
+msgstr "odprto vprašanje"
+
+msgid "Open an issue"
+msgstr "Odprite številko"
+
+msgid "previous page"
+msgstr "Prejšnja stran"
 
 msgid "Fullscreen mode"
 msgstr "Celozaslonski način"
 
-msgid "Theme by the"
-msgstr "Tema avtorja"
-
-msgid "repository"
-msgstr "odlagališče"
+msgid "Search the docs ..."
+msgstr "Poiščite dokumente ..."
 
 msgid "Download this page"
 msgstr "Prenesite to stran"
@@ -26,44 +41,20 @@ msgstr "Prenesite to stran"
 msgid "By the"
 msgstr "Avtor"
 
-msgid "Copyright"
-msgstr "avtorske pravice"
+msgid "Download notebook file"
+msgstr "Prenesite datoteko zvezka"
 
-msgid "Source repository"
-msgstr "Izvorno skladišče"
-
-msgid "previous page"
-msgstr "Prejšnja stran"
-
-msgid "Toggle navigation"
-msgstr "Preklopi navigacijo"
-
-msgid "Sphinx Book Theme"
-msgstr "Tema knjige Sphinx"
-
-msgid "Contents"
-msgstr "Vsebina"
+msgid "suggest edit"
+msgstr "predlagajte urejanje"
 
 msgid "Search this book..."
 msgstr "Poiščite to knjigo ..."
 
-msgid "Last updated on"
-msgstr "Nazadnje posodobljeno dne"
+msgid "Source repository"
+msgstr "Izvorno skladišče"
 
-msgid "Edit this page"
-msgstr "Uredite to stran"
-
-msgid "next page"
-msgstr "Naslednja stran"
-
-msgid "By"
-msgstr "Avtor"
-
-msgid "Print to PDF"
-msgstr "Natisni v PDF"
-
-msgid "Open an issue"
-msgstr "Odprite številko"
+msgid "Contents"
+msgstr "Vsebina"
 
 msgid "Launch"
 msgstr "Kosilo"
@@ -71,11 +62,20 @@ msgstr "Kosilo"
 msgid "Download source file"
 msgstr "Prenesite izvorno datoteko"
 
-msgid "Search the docs ..."
-msgstr "Poiščite dokumente ..."
+msgid "By"
+msgstr "Avtor"
 
-msgid "open issue"
-msgstr "odprto vprašanje"
+msgid "Toggle navigation"
+msgstr "Preklopi navigacijo"
 
-msgid "suggest edit"
-msgstr "predlagajte urejanje"
+msgid "Copyright"
+msgstr "avtorske pravice"
+
+msgid "next page"
+msgstr "Naslednja stran"
+
+msgid "Last updated on"
+msgstr "Nazadnje posodobljeno dne"
+
+msgid "Sphinx Book Theme"
+msgstr "Tema knjige Sphinx"
