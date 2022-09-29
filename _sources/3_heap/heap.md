@@ -1,1 +1,1 @@
-# File de priorité et applications
+# File de priorité
