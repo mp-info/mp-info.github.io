@@ -12,7 +12,7 @@ parts:
           - file: 1_revisions/ocaml.ipynb
           - file: 1_revisions/agreg.md
           # - file: 1_revisions/ocaml_quizz.md
-  - caption: Rappels sur les graphes
+  - caption: Théorie des graphes
     chapters:
       - file: 2_arbre_graphe/0_definition/0_graph_def.md
         sections: 
@@ -26,6 +26,6 @@ parts:
           - file: 2_arbre_graphe/2_parcours/2_bfs.ipynb
           - file: 2_arbre_graphe/2_parcours/animation_traversal.ipynb
           - file: 2_arbre_graphe/2_parcours/td_parcours/td_parcours.md
-      - file: 3_heap/heap/heap.md
+      - file: 3_heap/heap.md
         sections:
-          - file: 3_heap/1_heap/heap.md
+          - file: 3_heap/1_heap/heap.ipynb
