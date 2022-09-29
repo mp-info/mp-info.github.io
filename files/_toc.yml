@@ -26,6 +26,6 @@ parts:
           - file: 2_arbre_graphe/2_parcours/2_bfs.ipynb
           - file: 2_arbre_graphe/2_parcours/animation_traversal.ipynb
           - file: 2_arbre_graphe/2_parcours/td_parcours/td_parcours.md
-      - file: 3_heap/heap.md
-        sections:
-          - file: 3_heap/1_heap/heap.ipynb
+      - file: 3_heap/1_heap/heap.ipynb
+        # sections:
+        #   - file: 
