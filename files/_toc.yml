@@ -28,4 +28,4 @@ parts:
           - file: 2_arbre_graphe/2_parcours/td_parcours/td_parcours.md
       - file: 3_heap/heap/heap.md
         sections:
-          - file: 3_heap/heap/heap.pdf
+          - file: 3_heap/1_heap/heap.md
