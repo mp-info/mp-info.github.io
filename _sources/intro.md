@@ -1,6 +1,6 @@
 # Option informatique en MP/MP\* <br/> Lycée La Martinière Monplaisir
 
-[**DM pour le 6 octobre**](https://www.ens.psl.eu/sites/default/files/2017_Info_sujet_infoA.pdf)
+[**DM pour le 13 octobre**](https://www.ens.psl.eu/sites/default/files/2017_Info_sujet_infoA.pdf)
 
 - [Programme officiel](https://prepas.org/index.php?document=70)
 - [Programmer en OCaml avec Basthon](https://notebook.basthon.fr/ocaml)
