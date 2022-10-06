@@ -7,13 +7,13 @@ options:
 parts:
   - caption: Généralités
     chapters:
-      - url: https://prepas.org/index.php?document=70
-        title: Programme officiel
       - file: 1_revisions/revisions_ocaml.ipynb
         sections: 
           - file: 1_revisions/ocaml.ipynb
           - file: 1_revisions/agreg.md
           # - file: 1_revisions/ocaml_quizz.md
+      - url: https://prepas.org/index.php?document=70
+        title: Programme officiel
       - url: https://ocaml.org/problems
         title: Exercices OCaml pour s'entraîner
   - caption: Théorie des graphes
