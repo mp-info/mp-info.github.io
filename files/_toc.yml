@@ -31,4 +31,4 @@ parts:
       - file: 3_heap/heap.md
         sections:
           - file: 3_heap/1_heap/heap.ipynb
-          - file: 3_heap/1_heap/td_heap.ipynb
+          - file: 3_heap/1_heap/td/td_heap.ipynb
