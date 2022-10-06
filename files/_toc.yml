@@ -5,8 +5,9 @@ root: intro
 options:
   numbered: True
 parts:
-  - caption: Révisions OCaml
+  - caption: Généralités
     chapters:
+      - file: programme.md
       - file: 1_revisions/revisions_ocaml.ipynb
         sections: 
           - file: 1_revisions/ocaml.ipynb
