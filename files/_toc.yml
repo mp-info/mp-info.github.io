@@ -7,7 +7,8 @@ options:
 parts:
   - caption: Généralités
     chapters:
-      - file: programme.md
+      - url: https://prepas.org/index.php?document=70
+        title: Programme officiel
       - file: 1_revisions/revisions_ocaml.ipynb
         sections: 
           - file: 1_revisions/ocaml.ipynb
