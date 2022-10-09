@@ -10,7 +10,6 @@ parts:
       - file: ds/ds1/ds1.md
         sections:
           - file: ds/ds1/revisions.md
-            title: Programme
       - file: 1_revisions/revisions_ocaml.ipynb
         sections: 
           - file: 1_revisions/ocaml.ipynb
