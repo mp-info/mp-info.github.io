@@ -7,6 +7,9 @@ options:
 parts:
   - caption: Généralités
     chapters:
+      - file: ds/ds1/ds1.md
+        sections:
+          - file: ds/ds1/revisions.md
       - file: 1_revisions/revisions_ocaml.ipynb
         sections: 
           - file: 1_revisions/ocaml.ipynb
@@ -18,9 +21,6 @@ parts:
         title: Exercices OCaml pour s'entraîner
   - caption: Théorie des graphes
     chapters:
-      - file: ds/ds1/ds1.md
-        sections:
-          - file: ds/ds1/revisions.md
       - file: 2_arbre_graphe/0_definition/0_graph_def.md
         sections: 
           - file: 2_arbre_graphe/0_definition/td/td_graph_def.md
