@@ -16,6 +16,9 @@ parts:
         title: Programme officiel
       - url: https://ocaml.org/problems
         title: Exercices OCaml pour s'entraîner
+  - caption: DS
+    chapters:
+      - file: ds/ds1/revisions.md
   - caption: Théorie des graphes
     chapters:
       - file: 2_arbre_graphe/0_definition/0_graph_def.md
