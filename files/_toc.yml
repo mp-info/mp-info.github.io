@@ -7,6 +7,10 @@ options:
 parts:
   - caption: Généralités
     chapters:
+      - file: files/ds/ds1/ds1.md
+        sections:
+          - file: ds/ds1/revisions.md
+            title: "Programme"
       - file: 1_revisions/revisions_ocaml.ipynb
         sections: 
           - file: 1_revisions/ocaml.ipynb
@@ -16,9 +20,6 @@ parts:
         title: Programme officiel
       - url: https://ocaml.org/problems
         title: Exercices OCaml pour s'entraîner
-  - caption: DS
-    chapters:
-      - file: ds/ds1/revisions.md
   - caption: Théorie des graphes
     chapters:
       - file: 2_arbre_graphe/0_definition/0_graph_def.md

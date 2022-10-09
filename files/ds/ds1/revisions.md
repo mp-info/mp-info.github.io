@@ -1,4 +1,4 @@
-#  DS 1 : Révisions
+#  DS 1 : Programme
 
 **Programme** :
 - Arête, sommet, cycle, connexité, arbre. Revoir les méthodes de démonstration (par récurrence, par l'absurde...). S'entraîner à refaire des démonstrations, sans non plus les apprendre par coeur (il faut s'adapter à l'énoncé du concours et ne pas essayer à tout prix de recracher une démonstration/un algorithme du cours si l'énoncé invite à le faire différemment).  
