@@ -486,7 +486,22 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="td-representation-et-parcours-de-graphes">
 <h1>TD : Représentation et parcours de graphes<a class="headerlink" href="#td-representation-et-parcours-de-graphes" title="Permalink to this headline">#</a></h1>
-<iframe src=https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/2_arbre_graphe/2_parcours/td_parcours/td_graphes2.pdf#zoom=page-width&pagemode=none height=900 width=100% allowfullscreen></iframe>
+<script>
+    let button_def;
+    $(function() {
+        button_def = button_cor(
+            '2_arbre_graphe/2_parcours/td_parcours/td_graphes2.pdf',
+            '2_arbre_graphe/2_parcours/td_parcours/td_graphes2_cor.pdf',
+            'td_graph2',
+            'button_graph2'
+        );
+    });
+</script>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<input type="button" id="button_graph2" onclick="button_graph2.switch()" />
+</aside>
+<iframe id="td_graph2" height=900 width=100% allowfullscreen></iframe>
 <script
    type="text/javascript"
    src="https://utteranc.es/client.js"
