@@ -3,7 +3,7 @@
 <script>
     let button_def;
     $(function() {
-        button_def = button_cor(
+        button_graph2 = button_cor(
             '2_arbre_graphe/2_parcours/td_parcours/td_graphes2.pdf',
             '2_arbre_graphe/2_parcours/td_parcours/td_graphes2_cor.pdf',
             'td_graph2',
