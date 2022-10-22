@@ -11,9 +11,9 @@ parts:
         sections:
           - file: ds/ds1/cs21_cor.ipynb
           - file: ds/ds1/revisions.md
-          - file: 1_revisions/preuves/preuve.md
       - file: 1_revisions/revisions_ocaml.ipynb
         sections: 
+          - file: 1_revisions/preuves/preuve.md
           - file: 1_revisions/ocaml.ipynb
           - file: 1_revisions/agreg.md
           # - file: 1_revisions/ocaml_quizz.md
