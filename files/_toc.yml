@@ -11,6 +11,8 @@ parts:
         sections:
           - file: ds/ds1/cs21_cor.ipynb
           - file: ds/ds1/revisions.md
+      - url: https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/dm/dm1/x17_cor.pdf)
+        title: "DM1 : Corrigé"
       - file: 1_revisions/revisions_ocaml.ipynb
         sections: 
           - file: 1_revisions/preuves/preuve.md
