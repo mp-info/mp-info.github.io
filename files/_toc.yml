@@ -7,6 +7,8 @@ options:
 parts:
   - caption: Généralités
     chapters:
+      - url: https://fortierq-mp-info-notes-grade-n9onka.streamlit.app
+        title: Notes et classements
       - file: ds/ds1/ds1.md
         sections:
           - file: ds/ds1/cs21_cor.ipynb
