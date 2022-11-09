@@ -89,6 +89,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://mp-info.github.io/3_heap/2_dijkstra/dijkstra.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="TD : File de priorité" href="../1_heap/td/td_heap.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -221,7 +222,7 @@ const thebe_selector_output = ".output, .cell_output"
   Théorie des graphes
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../2_arbre_graphe/0_definition/0_graph_def.html">
    Définitions sur les graphes
@@ -288,16 +289,16 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="../heap.html">
    File de priorité et applications
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="../1_heap/heap.html">
      File de priorité
@@ -306,6 +307,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../1_heap/td/td_heap.html">
      TD : File de priorité
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Algorithme de Dijkstra
     </a>
    </li>
   </ul>
@@ -383,7 +389,7 @@ title="Launch on Binder"
       </li>
       
       <li>
-        <a href="https://notebook.basthon.fr//?from=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/3_heap/2_dijkstra/dijkstra.ipynb"
+        <a href="https://notebook.basthon.fr/ocaml/?from=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/3_heap/2_dijkstra/dijkstra.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -551,7 +557,36 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="algorithme-de-dijkstra">
 <h1>Algorithme de Dijkstra<a class="headerlink" href="#algorithme-de-dijkstra" title="Permalink to this headline">#</a></h1>
-<iframe src=https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/3_heap/2_dijkstra/dijkstra.pdf#zoom=page-fit&pagemode=none height=500 width=100% allowfullscreen></iframe><script
+<iframe src=https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/3_heap/2_dijkstra/dijkstra.pdf#zoom=page-fit&pagemode=none height=500 width=100% allowfullscreen></iframe><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">type</span> <span class="n">arbre</span> <span class="o">=</span> <span class="nc">E</span> <span class="o">|</span> <span class="nc">N</span> <span class="k">of</span> <span class="o">(</span><span class="kt">int</span><span class="o">*</span><span class="kt">int</span><span class="o">)*</span><span class="n">arbre</span><span class="o">*</span><span class="n">arbre</span><span class="o">;;</span>
+
+<span class="k">let</span> <span class="n">make</span> <span class="bp">()</span> <span class="o">=</span> <span class="nc">E</span><span class="o">;;</span>
+
+<span class="k">let</span> <span class="k">rec</span> <span class="n">add</span> <span class="n">a</span> <span class="n">c</span> <span class="o">=</span> <span class="k">match</span> <span class="n">a</span> <span class="k">with</span>
+  <span class="o">|</span> <span class="nc">E</span> <span class="o">-&gt;</span> <span class="nc">N</span><span class="o">(</span><span class="n">c</span><span class="o">,</span> <span class="nc">E</span><span class="o">,</span> <span class="nc">E</span><span class="o">)</span>
+  <span class="o">|</span> <span class="nc">N</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="n">g</span><span class="o">,</span> <span class="n">d</span><span class="o">)</span> <span class="k">when</span> <span class="n">c</span> <span class="o">&lt;</span> <span class="n">r</span> <span class="o">-&gt;</span> <span class="nc">N</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="n">add</span> <span class="n">g</span> <span class="n">c</span><span class="o">,</span> <span class="n">d</span><span class="o">)</span>
+  <span class="o">|</span> <span class="nc">N</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="n">g</span><span class="o">,</span> <span class="n">d</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="nc">N</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="n">g</span><span class="o">,</span> <span class="n">add</span> <span class="n">d</span> <span class="n">c</span><span class="o">);;</span>
+
+<span class="k">let</span> <span class="k">rec</span> <span class="n">take_min</span> <span class="n">a</span> <span class="o">=</span> <span class="k">match</span> <span class="n">a</span> <span class="k">with</span>
+  <span class="o">|</span> <span class="nc">E</span> <span class="o">-&gt;</span> <span class="n">failwith</span> <span class="s2">&quot;empty&quot;</span>
+  <span class="o">|</span> <span class="nc">N</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="nc">E</span><span class="o">,</span> <span class="n">d</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>type arbre = E | N of (int * int) * arbre * arbre
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val make : unit -&gt; arbre = &lt;fun&gt;
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val add : arbre -&gt; int -&gt; int -&gt; arbre = &lt;fun&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<script
    type="text/javascript"
    src="https://utteranc.es/client.js"
    async="async"
@@ -571,16 +606,16 @@ title="Print to PDF"
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "ocaml-jupyter"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "ocaml-jupyter",
             path: "./3_heap/2_dijkstra"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'ocaml-jupyter'</script>
 
               </div>
               
@@ -589,6 +624,13 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../1_heap/td/td_heap.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">TD : File de priorité</p>
+        </div>
+    </a>
 </div>
             </footer>
         </div>
