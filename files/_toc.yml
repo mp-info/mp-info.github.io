@@ -43,4 +43,4 @@ parts:
           - file: 3_heap/1_heap/heap.ipynb
           - file: 3_heap/1_heap/td/td_heap.ipynb
           - file: 3_heap/2_dijkstra/dijkstra.ipynb
-      - file: 3_heap/3_kruskal/kruskal.ipynb
+      - file: 4_kruskal/kruskal.ipynb
