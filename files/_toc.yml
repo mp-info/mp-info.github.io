@@ -23,7 +23,7 @@ parts:
           # - file: 1_revisions/ocaml_quizz.md
       - url: https://prepas.org/index.php?document=70
         title: Programme officiel
-      - file: exos.md
+      - file: exos.ipynb
   - caption: Théorie des graphes
     chapters:
       - file: 2_arbre_graphe/0_definition/0_graph_def.md
