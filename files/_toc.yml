@@ -7,6 +7,15 @@ options:
 parts:
   - caption: Généralités
     chapters:
+      - file: 1_revisions/revisions_ocaml.ipynb
+        sections: 
+          - file: 1_revisions/preuves/preuve.md
+          - file: 1_revisions/ocaml.ipynb
+          - file: 1_revisions/agreg.md
+          # - file: 1_revisions/ocaml_quizz.md
+      - file: exos.ipynb
+  - caption: DS et DM
+    chapters:
       - url: https://fortierq-mp-info-notes-grade-n9onka.streamlit.app
         title: Notes et classements
       - file: ds/ds1/ds1.md
@@ -15,15 +24,6 @@ parts:
           - file: ds/ds1/revisions.md
       - url: https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/dm/dm1/x17_cor.pdf
         title: "DM1 : Corrigé"
-      - file: 1_revisions/revisions_ocaml.ipynb
-        sections: 
-          - file: 1_revisions/preuves/preuve.md
-          - file: 1_revisions/ocaml.ipynb
-          - file: 1_revisions/agreg.md
-          # - file: 1_revisions/ocaml_quizz.md
-      - url: https://prepas.org/index.php?document=70
-        title: Programme officiel
-      - file: exos.ipynb
   - caption: Théorie des graphes
     chapters:
       - file: 2_arbre_graphe/0_definition/0_graph_def.md
