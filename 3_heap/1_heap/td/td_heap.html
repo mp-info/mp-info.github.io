@@ -409,7 +409,7 @@ title="Launch on Binder"
       </li>
       
       <li>
-        <a href="https://notebook.basthon.fr/?from=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/3_heap/1_heap/td/td_heap.ipynb"
+        <a href="https://notebook.basthon.fr/?kernel=ocaml&from=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/3_heap/1_heap/td/td_heap.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -577,7 +577,21 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="td-file-de-priorite">
 <h1>TD : File de priorité<a class="headerlink" href="#td-file-de-priorite" title="Permalink to this headline">#</a></h1>
-<iframe src=https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/3_heap/1_heap/td/td_heap.pdf#zoom=page-fit&pagemo de=none height=900 width=100% allowfullscreen></iframe><script
+<script>
+    $(function() {
+        button_heap = button_cor(
+            '3_heap/1_heap/td/td_heap.pdf',
+            '3_heap/1_heap/td/td_heap_cor.pdf',
+            'td_heap',
+            'button_heap'
+        );
+    });
+</script>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<input type="button" id="button_heap" onclick="button_heap.switch()" />
+</aside>
+<iframe id="td_heap" height=900 width=100% allowfullscreen></iframe><script
    type="text/javascript"
    src="https://utteranc.es/client.js"
    async="async"
@@ -597,16 +611,16 @@ title="Print to PDF"
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "ocaml-jupyter"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "ocaml-jupyter",
             path: "./3_heap/1_heap/td"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'ocaml-jupyter'</script>
 
               </div>
               
