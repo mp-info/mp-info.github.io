@@ -1,6 +1,6 @@
 # Option informatique en MP/MP\* <br/> Lycée La Martinière Monplaisir
 
-<div id="" style="border-style:solid; border-width:1px; overflow:scroll; height:100px;">
+<div id="" style="border-style:dotted; border-width:1px; overflow:scroll; height:100px;">
 <center><b>Dernières modifications</b></center>
 <ul>
 <li>Ajout corrigé td file de priorité</li>
