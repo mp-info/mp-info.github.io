@@ -1,6 +1,6 @@
 # Option informatique en MP/MP\* <br/> Lycée La Martinière Monplaisir
 
-<div id="" style="border-style:solid; border-width:1px; overflow:scroll; height:150px;">
+<div id="" style="border-style:solid; border-width:1px; overflow:scroll; height:100px;">
 <center><b>Dernières modifications</b></center>
 <ul>
 <li><a href=https://github.com/mp-info/mp-info.github.io/discussions>Ajout d'un espace discussion pour poser des questions</a></li>
