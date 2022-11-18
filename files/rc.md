@@ -1,6 +1,7 @@
 # Ressources
 
 - [Programme officiel](https://prepas.org/index.php?document=70)  
+- [**Refaire les TP de MPSI**](https://mpsilamartin.github.io/info/TP_opt)  
 - [Exercices corrigés en OCaml](https://ocaml.org/problems)
 - [Cours à LLG (**anciens programme**)](https://info-llg.fr)
 - [Cours OCaml à l'université Cornell](https://cs3110.github.io/textbook/cover.html)
