@@ -13,7 +13,7 @@ parts:
           - file: 1_revisions/ocaml.ipynb
           - file: 1_revisions/agreg.md
           # - file: 1_revisions/ocaml_quizz.md
-      - file: exos.ipynb
+      - file: rc.md
   - caption: DS et DM
     chapters:
       - url: https://fortierq-mp-info-notes-grade-n9onka.streamlit.app
