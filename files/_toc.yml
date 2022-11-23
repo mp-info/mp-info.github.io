@@ -46,3 +46,4 @@ parts:
       - file: 4_kruskal/kruskal.ipynb
         sections:
           - file: 4_kruskal/td/td_kruskal_dijkstra.md
+      - file: tp/tp_tsp/tp_tsp.ipynb
