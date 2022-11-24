@@ -661,8 +661,9 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="tp-1-2-approximation-du-voyageur-de-commerce">
 <h1>TP 1 : 2-approximation du voyageur de commerce<a class="headerlink" href="#tp-1-2-approximation-du-voyageur-de-commerce" title="Permalink to this headline">#</a></h1>
 <center><img src=https://imgs.xkcd.com/comics/travelling_salesman_problem.png width=60%></center>
+<hr class="docutils" />
 <p>Soit <span class="math notranslate nohighlight">\(G\)</span> un graphe non orienté, complet et pondéré. Le <strong>problème du voyageur de commerce</strong> consiste à trouver un cycle de poids minimal dans <span class="math notranslate nohighlight">\(G\)</span>. Ce problème est NP-difficile, ce qui signifie qu’il n’existe probablement pas d’algorithme efficace (polynomial en la taille de l’entrée) pour le résoudre de façon exacte.<br />
-À la place, on va trouver une solution approchée à ce problème. Ainsi, nous allons trouver un cycle dont le poids est au plus le double de l’optimal, avec l’algorithme suivant :</p>
+À la place, on va trouver une solution approchée à ce problème. En effet, nous allons trouver un cycle dont le poids est au plus le double de l’optimal, avec l’algorithme suivant :</p>
 <ol class="simple">
 <li><p>Calcul d’un arbre couvrant de poids minimal <span class="math notranslate nohighlight">\(T\)</span> dans <span class="math notranslate nohighlight">\(G\)</span>, avec l’algorithme de Kruskal.</p></li>
 <li><p>Construction un cycle <span class="math notranslate nohighlight">\(C\)</span> en parcourant <span class="math notranslate nohighlight">\(T\)</span> en profondeur, en commençant par un sommet quelconque.</p></li>
@@ -670,7 +671,7 @@ title="Print to PDF"
 <p>On admettra que, si <span class="math notranslate nohighlight">\(G\)</span> est euclidien (c’est-à-dire que les poids des arêtes vérifient l’inégalité triangulaire - ce qui est le cas pour des coordonnées), alors cet algorithme trouve un cycle de poids au plus le double de l’optimal (<a class="reference external" href="https://perso.eleves.ens-rennes.fr/people/julie.parreaux/fichiers_agreg/info_dev/ApproximationTSP.pdf">voir une démonstration</a>).</p>
 <section id="graphe-des-villes">
 <h2>Graphe des villes<a class="headerlink" href="#graphe-des-villes" title="Permalink to this headline">#</a></h2>
-<center><img src=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/tp/tp_tsp/cities.png width=50%></center>
+<center><img src=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/tp/tp_tsp/cities.png width=60%></center>
 <p>Nous allons tester nos fonctions sur le graphe des 10 plus grandes villes françaises, où le poids entre deux villes est sa distance à vol d’oiseau. Sur la carte ci-dessus, on a affiché le cycle de poids minimum passant par toutes ces villes (on admet qu’il est bien minimum).</p>
 <p>Le tableau <code class="docutils literal notranslate"><span class="pre">cities</span></code> contient les coordonnées GPS des villes :</p>
 <div class="cell docutils container">
@@ -701,7 +702,7 @@ R \arccos \left( \sin \phi_1 \sin \phi_2 + \cos \phi_1 \cos \phi_2 \cos (\lambda
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
-<p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">d</span> <span class="pre">i</span> <span class="pre">j</span></code> qui renvoie la distance entre les villes <code class="docutils literal notranslate"><span class="pre">i</span></code> et <code class="docutils literal notranslate"><span class="pre">j</span></code> (en km).</p>
+<p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">d</span> <span class="pre">i</span> <span class="pre">j</span></code> qui renvoie la distance entre les villes <code class="docutils literal notranslate"><span class="pre">i</span></code> et <code class="docutils literal notranslate"><span class="pre">j</span></code> (en km). On utilisera <code class="docutils literal notranslate"><span class="pre">cos</span></code>, <code class="docutils literal notranslate"><span class="pre">sin</span></code> et <code class="docutils literal notranslate"><span class="pre">acos</span></code> (pour <span class="math notranslate nohighlight">\(\arccos\)</span>).</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
