@@ -787,6 +787,21 @@ Remarque : on pourrait aussi utiliser n’importe quel algorithme de tri, comme 
 <p class="admonition-title">Question</p>
 <p>En utilisant les fonctions précédentes, définir un tas min en ajoutant 3, 1, 2, 0 puis en supprimant deux fois le minimum puis en ajoutant 5, 0, 1, 4. Vérifier que vous obtenez le tas représenté sur l’exemple en début de section.</p>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">h</span> <span class="o">=</span> <span class="o">{</span><span class="n">a</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="mi">10</span> <span class="mi">0</span><span class="o">;</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="o">}</span> <span class="k">in</span>
+<span class="n">add</span> <span class="n">h</span> <span class="mi">3</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">1</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">2</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">0</span><span class="o">;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">1</span> <span class="k">do</span> <span class="n">ignore</span> <span class="o">(</span><span class="n">extract_min</span> <span class="n">h</span><span class="o">)</span> <span class="k">done</span><span class="o">;</span>
+<span class="n">add</span> <span class="n">h</span> <span class="mi">5</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">0</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">1</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>- : unit = ()
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="algorithme-de-kruskal">
 <h2>Algorithme de Kruskal<a class="headerlink" href="#algorithme-de-kruskal" title="Permalink to this headline">#</a></h2>
