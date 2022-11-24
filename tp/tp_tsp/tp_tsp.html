@@ -660,6 +660,10 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="tp-1-2-approximation-du-voyageur-de-commerce">
 <h1>TP 1 : 2-approximation du voyageur de commerce<a class="headerlink" href="#tp-1-2-approximation-du-voyageur-de-commerce" title="Permalink to this headline">#</a></h1>
+<blockquote>
+<div><p>Ce TP est à rendre au plus tard ce dimanche 27 novembre. Le plus simple est de répondre à ce TP sur <a class="reference external" href="https://cas.ent.auvergnerhonealpes.fr/login?service=https%3A//capytale2.ac-paris.fr/web/c-auth/pvd/mcer/connect">Capytale</a> (vous aurez besoin de vos identifiants pour l’ENT). J’aurai alors directement accès à votre fichier que je commenterai.<br />
+Si vous ne pouvez pas vous connecter sur Capytale, vous pouvez terminer le TP sur Basthon, puis télécharger et m’envoyer le notebook, à <a class="reference external" href="mailto:qpfortier&#37;&#52;&#48;gmail&#46;com">qpfortier<span>&#64;</span>gmail<span>&#46;</span>com</a>.</p>
+</div></blockquote>
 <center><img src=https://imgs.xkcd.com/comics/travelling_salesman_problem.png width=60%></center>
 <hr class="docutils" />
 <p>Soit <span class="math notranslate nohighlight">\(G\)</span> un graphe non orienté, complet et pondéré. Le <strong>problème du voyageur de commerce</strong> consiste à trouver un cycle de poids minimal dans <span class="math notranslate nohighlight">\(G\)</span>. Ce problème est NP-difficile, ce qui signifie qu’il n’existe probablement pas d’algorithme efficace (polynomial en la taille de l’entrée) pour le résoudre de façon exacte.<br />
@@ -840,6 +844,7 @@ Remarque : on pourrait aussi utiliser n’importe quel algorithme de tri, comme 
 </section>
 <section id="pour-ceux-qui-ont-fini">
 <h2>Pour ceux qui ont fini<a class="headerlink" href="#pour-ceux-qui-ont-fini" title="Permalink to this headline">#</a></h2>
+<p>Cette partie n’est pas à rendre (sauf si vous avez le temps de le faire…).</p>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
 <p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">prim</span> <span class="pre">:</span> <span class="pre">float</span> <span class="pre">array</span> <span class="pre">array</span> <span class="pre">-&gt;</span> <span class="pre">int</span> <span class="pre">list</span> <span class="pre">array</span></code> telle que <code class="docutils literal notranslate"><span class="pre">prim</span> <span class="pre">g</span></code> renvoie un arbre couvrant de poids minimum du graphe <code class="docutils literal notranslate"><span class="pre">g</span></code>, en utilisant l’algorithme de Prim au lieu de celui de Kruskal (voir la fin du cours pour la description).</p>
