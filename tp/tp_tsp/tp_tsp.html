@@ -705,9 +705,38 @@ R \arccos \left( \sin \phi_1 \sin \phi_2 + \cos \phi_1 \cos \phi_2 \cos (\lambda
 <p class="admonition-title">Question</p>
 <p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">deg_to_rad</span> <span class="pre">:</span> <span class="pre">float</span> <span class="pre">-&gt;</span> <span class="pre">float</span></code> qui convertit un angle en degrés en radians. On utilisera <span class="math notranslate nohighlight">\(\pi \approx 3.14\)</span>.</p>
 </div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">deg_to_rad</span> <span class="n">d</span> <span class="o">=</span> <span class="n">d</span> <span class="o">*.</span> <span class="mi">3</span><span class="o">.</span><span class="mi">14</span> <span class="o">/.</span> <span class="mi">180</span><span class="o">.</span><span class="mi">0</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">deg_to_rad</span> <span class="p">:</span> <span class="nb">float</span> <span class="o">-&gt;</span> <span class="nb">float</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">fun</span><span class="o">&gt;</span>
+
+
+</pre></div>
+</div>
+</div>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
 <p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">d</span> <span class="pre">i</span> <span class="pre">j</span></code> qui renvoie la distance entre les villes <code class="docutils literal notranslate"><span class="pre">i</span></code> et <code class="docutils literal notranslate"><span class="pre">j</span></code> (en km). On utilisera <code class="docutils literal notranslate"><span class="pre">cos</span></code>, <code class="docutils literal notranslate"><span class="pre">sin</span></code> et <code class="docutils literal notranslate"><span class="pre">acos</span></code> (pour <span class="math notranslate nohighlight">\(\arccos\)</span>).</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">d</span> <span class="n">i</span> <span class="n">j</span> <span class="o">=</span>
+  <span class="k">let</span> <span class="o">(</span><span class="n">phi1</span><span class="o">,</span> <span class="n">lambda1</span><span class="o">)</span> <span class="o">=</span> <span class="n">cities</span><span class="o">.(</span><span class="n">i</span><span class="o">)</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="o">(</span><span class="n">phi2</span><span class="o">,</span> <span class="n">lambda2</span><span class="o">)</span> <span class="o">=</span> <span class="n">cities</span><span class="o">.(</span><span class="n">j</span><span class="o">)</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="n">phi1</span> <span class="o">=</span> <span class="n">deg_to_rad</span> <span class="n">phi1</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="n">phi2</span> <span class="o">=</span> <span class="n">deg_to_rad</span> <span class="n">phi2</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="n">lambda1</span> <span class="o">=</span> <span class="n">deg_to_rad</span> <span class="n">lambda1</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="n">lambda2</span> <span class="o">=</span> <span class="n">deg_to_rad</span> <span class="n">lambda2</span> <span class="k">in</span>
+  <span class="mi">6400</span><span class="o">.</span> <span class="o">*.</span> <span class="n">acos</span> <span class="o">(</span><span class="n">sin</span> <span class="n">phi1</span> <span class="o">*.</span> <span class="n">sin</span> <span class="n">phi2</span> <span class="o">+.</span> <span class="n">cos</span> <span class="n">phi1</span> <span class="o">*.</span> <span class="n">cos</span> <span class="n">phi2</span> <span class="o">*.</span> <span class="n">cos</span> <span class="o">(</span><span class="n">lambda2</span> <span class="o">-.</span> <span class="n">lambda1</span><span class="o">))</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">d</span> <span class="p">:</span> <span class="nb">int</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="o">-&gt;</span> <span class="nb">float</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">fun</span><span class="o">&gt;</span>
+
+
+</pre></div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -725,10 +754,55 @@ R \arccos \left( \sin \phi_1 \sin \phi_2 + \cos \phi_1 \cos \phi_2 \cos (\lambda
 <p class="admonition-title">Question</p>
 <p>Définir une variable <code class="docutils literal notranslate"><span class="pre">g_cities</span></code> qui contient la matrice pondérée du graphe complet dont les sommets sont les villes de <code class="docutils literal notranslate"><span class="pre">cities</span></code> et dont les arêtes ont pour poids la distance à vol d’oiseau entre les villes.</p>
 </div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">g_cities</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make_matrix</span> <span class="mi">10</span> <span class="mi">10</span> <span class="mi">0</span><span class="o">.</span>
+
+<span class="k">let</span> <span class="bp">()</span> <span class="o">=</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">9</span> <span class="k">do</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">9</span> <span class="k">do</span>
+      <span class="n">g_cities</span><span class="o">.(</span><span class="n">i</span><span class="o">).(</span><span class="n">j</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="n">d</span> <span class="n">i</span> <span class="n">j</span>
+    <span class="k">done</span>
+  <span class="k">done</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">g_cities</span> <span class="p">:</span> <span class="nb">float</span> <span class="n">array</span> <span class="n">array</span> <span class="o">=</span>
+  <span class="p">[</span><span class="o">|</span><span class="p">[</span><span class="o">|</span><span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="o">|</span><span class="p">];</span>
+    <span class="p">[</span><span class="o">|</span><span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="o">|</span><span class="p">];</span>
+    <span class="p">[</span><span class="o">|</span><span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="o">|</span><span class="p">];</span>
+    <span class="p">[</span><span class="o">|</span><span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="o">|</span><span class="p">];</span>
+    <span class="p">[</span><span class="o">|</span><span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="o">|</span><span class="p">];</span>
+    <span class="p">[</span><span class="o">|</span><span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="o">|</span><span class="p">];</span>
+    <span class="p">[</span><span class="o">|</span><span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="o">|</span><span class="p">];</span>
+    <span class="p">[</span><span class="o">|</span><span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="o">|</span><span class="p">];</span>
+    <span class="p">[</span><span class="o">|</span><span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="o">|</span><span class="p">];</span>
+    <span class="p">[</span><span class="o">|</span><span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="p">;</span> <span class="mf">0.</span><span class="o">|</span><span class="p">]</span><span class="o">|</span><span class="p">]</span>
+
+
+</pre></div>
+</div>
+</div>
 <p>On représente un cycle par une liste de sommets. Par exemple, <code class="docutils literal notranslate"><span class="pre">[0;</span> <span class="pre">3;</span> <span class="pre">7;</span> <span class="pre">5;</span> <span class="pre">8;</span> <span class="pre">2;</span> <span class="pre">6;</span> <span class="pre">1;</span> <span class="pre">4;</span> <span class="pre">9]</span></code> est le cycle qui commence à la ville <code class="docutils literal notranslate"><span class="pre">0</span></code> (Lille) puis va à la ville <code class="docutils literal notranslate"><span class="pre">3</span></code> (Strasbourg)… jusqu’à la ville <code class="docutils literal notranslate"><span class="pre">9</span></code> (Paris) et revient à la ville <code class="docutils literal notranslate"><span class="pre">0</span></code> (Lille).</p>
 <div class="admonition-exercice admonition">
 <p class="admonition-title">Exercice</p>
 <p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">length_cycle</span> <span class="pre">:</span> <span class="pre">int</span> <span class="pre">list</span> <span class="pre">-&gt;</span> <span class="pre">float</span></code> qui renvoie la longueur d’un cycle (en utilisant <code class="docutils literal notranslate"><span class="pre">g_cities</span></code>).</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">length_cycle</span> <span class="n">cycle</span> <span class="o">=</span>
+  <span class="k">let</span> <span class="n">debut</span> <span class="o">=</span> <span class="nn">List</span><span class="p">.</span><span class="n">hd</span> <span class="n">cycle</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="k">rec</span> <span class="n">aux</span> <span class="o">=</span> <span class="k">function</span>
+    <span class="o">|</span> <span class="bp">[]</span> <span class="o">-&gt;</span> <span class="mi">0</span><span class="o">.</span>
+    <span class="o">|</span> <span class="o">[</span><span class="n">x</span><span class="o">]</span> <span class="o">-&gt;</span> <span class="n">g_cities</span><span class="o">.(</span><span class="n">x</span><span class="o">).(</span><span class="n">debut</span><span class="o">)</span>
+    <span class="o">|</span> <span class="n">x</span> <span class="o">::</span> <span class="n">y</span> <span class="o">::</span> <span class="n">xs</span> <span class="o">-&gt;</span> <span class="n">g_cities</span><span class="o">.(</span><span class="n">x</span><span class="o">).(</span><span class="n">y</span><span class="o">)</span> <span class="o">+.</span> <span class="n">aux</span> <span class="o">(</span><span class="n">y</span> <span class="o">::</span> <span class="n">xs</span><span class="o">)</span> <span class="k">in</span>
+  <span class="n">aux</span> <span class="n">cycle</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">length_cycle</span> <span class="p">:</span> <span class="nb">int</span> <span class="nb">list</span> <span class="o">-&gt;</span> <span class="nb">float</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">fun</span><span class="o">&gt;</span>
+
+
+</pre></div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -767,6 +841,20 @@ Remarque : on pourrait aussi utiliser n’importe quel algorithme de tri, comme 
 <p class="admonition-title">Question</p>
 <p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">swap</span> <span class="pre">:</span> <span class="pre">'a</span> <span class="pre">heap</span> <span class="pre">-&gt;</span> <span class="pre">int</span> <span class="pre">-&gt;</span> <span class="pre">int</span> <span class="pre">-&gt;</span> <span class="pre">unit</span></code> qui échange les éléments d’indice <code class="docutils literal notranslate"><span class="pre">i</span></code> et <code class="docutils literal notranslate"><span class="pre">j</span></code> dans le tableau <code class="docutils literal notranslate"><span class="pre">a</span></code> du tas <code class="docutils literal notranslate"><span class="pre">h</span></code>.</p>
 </div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">swap</span> <span class="n">h</span> <span class="n">i</span> <span class="n">j</span> <span class="o">=</span>
+  <span class="k">let</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(</span><span class="n">i</span><span class="o">)</span> <span class="k">in</span>
+  <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(</span><span class="n">i</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(</span><span class="n">j</span><span class="o">);</span>
+  <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(</span><span class="n">j</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="n">tmp</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">swap</span> <span class="p">:</span> <span class="s1">&#39;a heap -&gt; int -&gt; int -&gt; unit = &lt;fun&gt;</span>
+
+
+</pre></div>
+</div>
+</div>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
 <p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">add</span> <span class="pre">:</span> <span class="pre">'a</span> <span class="pre">heap</span> <span class="pre">-&gt;</span> <span class="pre">'a</span> <span class="pre">-&gt;</span> <span class="pre">unit</span></code> qui ajoute un élément à un tas. Il faut :</p>
@@ -774,6 +862,26 @@ Remarque : on pourrait aussi utiliser n’importe quel algorithme de tri, comme 
 <li><p>Ajouter l’élément à la fin du tableau.</p></li>
 <li><p>Remonter l’élément jusqu’à ce qu’il soit plus petit que son père (ou qu’il soit à la racine). On pourra utiliser une fonction récursive auxiliaire (équivalente à la fonction <code class="docutils literal notranslate"><span class="pre">up</span></code> du cours).</p></li>
 </ul>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">add</span> <span class="n">h</span> <span class="n">x</span> <span class="o">=</span>
+  <span class="k">let</span> <span class="k">rec</span> <span class="n">aux</span> <span class="n">i</span> <span class="o">=</span>
+    <span class="k">let</span> <span class="n">p</span> <span class="o">=</span> <span class="o">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="o">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="k">in</span>
+    <span class="k">if</span> <span class="n">p</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(</span><span class="n">p</span><span class="o">)</span> <span class="o">&gt;</span> <span class="n">x</span> <span class="k">then</span> <span class="o">(</span>
+      <span class="n">swap</span> <span class="n">h</span> <span class="n">i</span> <span class="n">p</span><span class="o">;</span>
+      <span class="n">aux</span> <span class="n">p</span>
+    <span class="o">)</span> <span class="k">in</span>
+  <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(</span><span class="n">h</span><span class="o">.</span><span class="n">n</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="n">x</span><span class="o">;</span>
+  <span class="n">aux</span> <span class="n">h</span><span class="o">.</span><span class="n">n</span><span class="o">;</span>
+  <span class="n">h</span><span class="o">.</span><span class="n">n</span> <span class="o">&lt;-</span> <span class="n">h</span><span class="o">.</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">add</span> <span class="p">:</span> <span class="s1">&#39;a heap -&gt; &#39;</span><span class="n">a</span> <span class="o">-&gt;</span> <span class="n">unit</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">fun</span><span class="o">&gt;</span>
+
+
+</pre></div>
+</div>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
@@ -783,21 +891,52 @@ Remarque : on pourrait aussi utiliser n’importe quel algorithme de tri, comme 
 <li><p>Descendre l’élément jusqu’à ce qu’il soit plus petit que ses deux fils (ou qu’il soit une feuille). On pourra utiliser une fonction récursive auxiliaire (équivalente à la fonction <code class="docutils literal notranslate"><span class="pre">down</span></code> du cours).</p></li>
 </ul>
 </div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">extract_min</span> <span class="n">h</span> <span class="o">=</span>
+  <span class="k">let</span> <span class="k">rec</span> <span class="n">down</span> <span class="n">i</span> <span class="o">=</span>
+    <span class="k">let</span> <span class="n">m</span> <span class="o">=</span> <span class="n">ref</span> <span class="n">i</span> <span class="k">in</span> <span class="c">(* minimum parmi i et ses deux fils *)</span>
+    <span class="k">if</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="n">h</span><span class="o">.</span><span class="n">n</span> <span class="o">&amp;&amp;</span> <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">&lt;</span> <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(!</span><span class="n">m</span><span class="o">)</span> <span class="k">then</span> <span class="n">m</span> <span class="o">:=</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="k">if</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="n">h</span><span class="o">.</span><span class="n">n</span> <span class="o">&amp;&amp;</span> <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="o">)</span> <span class="o">&lt;</span> <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(!</span><span class="n">m</span><span class="o">)</span> <span class="k">then</span> <span class="n">m</span> <span class="o">:=</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="o">;</span>
+    <span class="k">if</span> <span class="o">!</span><span class="n">m</span> <span class="o">&lt;&gt;</span> <span class="n">i</span> <span class="k">then</span> <span class="o">(</span>
+      <span class="n">swap</span> <span class="n">h</span> <span class="n">i</span> <span class="o">!</span><span class="n">m</span><span class="o">;</span>
+      <span class="n">down</span> <span class="o">!</span><span class="n">m</span>
+    <span class="o">)</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="n">x</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(</span><span class="mi">0</span><span class="o">)</span> <span class="k">in</span>
+  <span class="n">h</span><span class="o">.</span><span class="n">n</span> <span class="o">&lt;-</span> <span class="n">h</span><span class="o">.</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(</span><span class="mi">0</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="n">h</span><span class="o">.</span><span class="n">a</span><span class="o">.(</span><span class="n">h</span><span class="o">.</span><span class="n">n</span><span class="o">);</span>
+  <span class="n">down</span> <span class="mi">0</span><span class="o">;</span>
+  <span class="n">x</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">extract_min</span> <span class="p">:</span> <span class="s1">&#39;a heap -&gt; &#39;</span><span class="n">a</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">fun</span><span class="o">&gt;</span>
+
+
+</pre></div>
+</div>
+</div>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
 <p>En utilisant les fonctions précédentes, définir un tas min en ajoutant 3, 1, 2, 0 puis en supprimant deux fois le minimum puis en ajoutant 5, 0, 1, 4. Vérifier que vous obtenez le tas représenté sur l’exemple en début de section.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">h</span> <span class="o">=</span> <span class="o">{</span><span class="n">a</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="mi">10</span> <span class="mi">0</span><span class="o">;</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="o">}</span> <span class="k">in</span>
-<span class="n">add</span> <span class="n">h</span> <span class="mi">3</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">1</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">2</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">0</span><span class="o">;</span>
+<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">h</span> <span class="o">=</span> <span class="o">{</span><span class="n">a</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="mi">10</span> <span class="mi">0</span><span class="o">;</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="o">};;</span>
+<span class="n">add</span> <span class="n">h</span> <span class="mi">3</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">1</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">2</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">0</span><span class="o">;</span> <span class="n">h</span><span class="o">;;</span>
 <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">1</span> <span class="k">do</span> <span class="n">ignore</span> <span class="o">(</span><span class="n">extract_min</span> <span class="n">h</span><span class="o">)</span> <span class="k">done</span><span class="o">;</span>
-<span class="n">add</span> <span class="n">h</span> <span class="mi">5</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">0</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">1</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">4</span>
+<span class="n">add</span> <span class="n">h</span> <span class="mi">5</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">0</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">1</span><span class="o">;</span> <span class="n">add</span> <span class="n">h</span> <span class="mi">4</span><span class="o">;</span>
+<span class="n">h</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>- : unit = ()
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val h : int heap = {a = [|0; 0; 0; 0; 0; 0; 0; 0; 0; 0|]; n = 0}
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>- : int heap = {a = [|0; 1; 2; 3; 0; 0; 0; 0; 0; 0|]; n = 4}
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>- : int heap = {a = [|0; 1; 4; 3; 2; 5; 0; 0; 0; 0|]; n = 6}
 </pre></div>
 </div>
 </div>
@@ -814,9 +953,57 @@ Remarque : on pourrait aussi utiliser n’importe quel algorithme de tri, comme 
 <p class="admonition-title">Question</p>
 <p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">has_path</span> <span class="pre">:</span> <span class="pre">int</span> <span class="pre">list</span> <span class="pre">array</span> <span class="pre">-&gt;</span> <span class="pre">int</span> <span class="pre">-&gt;</span> <span class="pre">int</span> <span class="pre">-&gt;</span> <span class="pre">bool</span></code> telle que <code class="docutils literal notranslate"><span class="pre">has_path</span> <span class="pre">t</span> <span class="pre">u</span> <span class="pre">v</span></code> renvoie <code class="docutils literal notranslate"><span class="pre">true</span></code> si et seulement s’il existe un chemin entre les sommets <code class="docutils literal notranslate"><span class="pre">u</span></code> et <code class="docutils literal notranslate"><span class="pre">v</span></code> dans le graphe <code class="docutils literal notranslate"><span class="pre">t</span></code>.</p>
 </div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">has_path</span> <span class="n">t</span> <span class="n">u</span> <span class="n">v</span> <span class="o">=</span>
+  <span class="k">let</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">t</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="n">visited</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="n">n</span> <span class="bp">false</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="k">rec</span> <span class="n">aux</span> <span class="n">u</span> <span class="o">=</span>
+    <span class="k">if</span> <span class="n">not</span> <span class="n">visited</span><span class="o">.(</span><span class="n">u</span><span class="o">)</span> <span class="k">then</span> <span class="o">(</span>
+       <span class="n">visited</span><span class="o">.(</span><span class="n">u</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="bp">true</span><span class="o">;</span>
+       <span class="nn">List</span><span class="p">.</span><span class="n">iter</span> <span class="n">aux</span> <span class="n">t</span><span class="o">.(</span><span class="n">u</span><span class="o">)</span>
+    <span class="o">)</span> <span class="k">in</span>
+   <span class="n">aux</span> <span class="n">u</span><span class="o">;</span>
+   <span class="n">visited</span><span class="o">.(</span><span class="n">v</span><span class="o">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">has_path</span> <span class="p">:</span> <span class="nb">int</span> <span class="nb">list</span> <span class="n">array</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="o">-&gt;</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">fun</span><span class="o">&gt;</span>
+
+
+</pre></div>
+</div>
+</div>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
 <p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">kruskal</span> <span class="pre">:</span> <span class="pre">float</span> <span class="pre">array</span> <span class="pre">array</span> <span class="pre">-&gt;</span> <span class="pre">int</span> <span class="pre">list</span> <span class="pre">array</span></code> telle que <code class="docutils literal notranslate"><span class="pre">kruskal</span> <span class="pre">g</span></code> renvoie un arbre couvrant de poids minimum du graphe <code class="docutils literal notranslate"><span class="pre">g</span></code>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">kruskal</span> <span class="n">g</span> <span class="o">=</span>
+  <span class="k">let</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">g</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="n">p</span> <span class="o">=</span> <span class="n">n</span><span class="o">*</span><span class="n">n</span> <span class="k">in</span> <span class="c">(* nombre d&#39;arêtes *)</span>
+  <span class="k">let</span> <span class="n">h</span> <span class="o">=</span> <span class="o">{</span><span class="n">a</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="n">p</span> <span class="o">(</span><span class="mi">0</span><span class="o">.,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="o">}</span> <span class="k">in</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">do</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">do</span>
+      <span class="n">add</span> <span class="n">h</span> <span class="o">(</span><span class="n">g</span><span class="o">.(</span><span class="n">i</span><span class="o">).(</span><span class="n">j</span><span class="o">),</span> <span class="n">i</span><span class="o">,</span> <span class="n">j</span><span class="o">)</span>
+    <span class="k">done</span>
+  <span class="k">done</span><span class="o">;</span>
+  <span class="k">let</span> <span class="n">mst</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="n">n</span> <span class="bp">[]</span> <span class="k">in</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="n">p</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">do</span>
+      <span class="k">let</span> <span class="o">(</span><span class="n">w</span><span class="o">,</span> <span class="n">u</span><span class="o">,</span> <span class="n">v</span><span class="o">)</span> <span class="o">=</span> <span class="n">extract_min</span> <span class="n">h</span> <span class="k">in</span>
+      <span class="k">if</span> <span class="n">not</span> <span class="o">(</span><span class="n">has_path</span> <span class="n">mst</span> <span class="n">u</span> <span class="n">v</span><span class="o">)</span> <span class="k">then</span> <span class="o">(</span>
+        <span class="n">mst</span><span class="o">.(</span><span class="n">u</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="n">v</span> <span class="o">::</span> <span class="n">mst</span><span class="o">.(</span><span class="n">u</span><span class="o">);</span>
+        <span class="n">mst</span><span class="o">.(</span><span class="n">v</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="n">u</span> <span class="o">::</span> <span class="n">mst</span><span class="o">.(</span><span class="n">v</span><span class="o">);</span>
+      <span class="o">)</span>
+  <span class="k">done</span><span class="o">;</span>
+  <span class="n">mst</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">kruskal</span> <span class="p">:</span> <span class="nb">float</span> <span class="n">array</span> <span class="n">array</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="nb">list</span> <span class="n">array</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">fun</span><span class="o">&gt;</span>
+
+
+</pre></div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -841,6 +1028,29 @@ Remarque : on pourrait aussi utiliser n’importe quel algorithme de tri, comme 
 <li><p>Calcule un arbre couvrant de poids minimal <code class="docutils literal notranslate"><span class="pre">t</span></code> dans <code class="docutils literal notranslate"><span class="pre">g</span></code>.</p></li>
 <li><p>Renvoie la liste des sommets de <code class="docutils literal notranslate"><span class="pre">t</span></code> dans un parcours en profondeur (dans l’ordre préfixe), en commençant par un sommet quelconque.</p></li>
 </ol>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">approx_tsp</span> <span class="n">g</span> <span class="o">=</span>
+  <span class="k">let</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">g</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="n">mst</span> <span class="o">=</span> <span class="n">kruskal</span> <span class="n">g</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="n">visited</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="n">n</span> <span class="bp">false</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="n">tour</span> <span class="o">=</span> <span class="n">ref</span> <span class="bp">[]</span> <span class="k">in</span>
+  <span class="k">let</span> <span class="k">rec</span> <span class="n">aux</span> <span class="n">u</span> <span class="o">=</span>
+    <span class="k">if</span> <span class="n">not</span> <span class="n">visited</span><span class="o">.(</span><span class="n">u</span><span class="o">)</span> <span class="k">then</span> <span class="o">(</span>
+      <span class="n">visited</span><span class="o">.(</span><span class="n">u</span><span class="o">)</span> <span class="o">&lt;-</span> <span class="bp">true</span><span class="o">;</span>
+      <span class="n">tour</span> <span class="o">:=</span> <span class="n">u</span> <span class="o">::</span> <span class="o">!</span><span class="n">tour</span><span class="o">;</span>
+      <span class="nn">List</span><span class="p">.</span><span class="n">iter</span> <span class="n">aux</span> <span class="n">mst</span><span class="o">.(</span><span class="n">u</span><span class="o">)</span>
+    <span class="o">)</span> <span class="k">in</span>
+  <span class="n">aux</span> <span class="mi">0</span><span class="o">;</span>
+  <span class="o">!</span><span class="n">tour</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">approx_tsp</span> <span class="p">:</span> <span class="nb">float</span> <span class="n">array</span> <span class="n">array</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="nb">list</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">fun</span><span class="o">&gt;</span>
+
+
+</pre></div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">

@@ -3,6 +3,7 @@
 <div id="" style="border-style:dotted; border-width:1px; overflow:scroll; height:100px;">
 <center><b>Dernières modifications</b></center>
 <ul>
+<li>Ajout corrigé TP voyageur de commerce</li>
 <li>Ajout corrigé TD file de priorité</li>
 <li><a href=https://github.com/mp-info/mp-info.github.io/discussions>Ajout d'un espace discussion pour poser des questions</a></li>
 </ul>
