@@ -47,3 +47,4 @@ parts:
         sections:
           - file: 4_kruskal/td/td_kruskal_dijkstra.md
       - file: tp/tp_tsp/tp_tsp.ipynb
+      - file: 5_couplage/couplage.ipynb
