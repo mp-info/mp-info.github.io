@@ -44,6 +44,7 @@ parts:
           - file: 3_heap/1_heap/td/td_heap.ipynb
           - file: 3_heap/2_dijkstra/dijkstra.ipynb
       - file: 4_kruskal/kruskal.ipynb
+        sections:
+          - file: 4_kruskal/td/td_kruskal_dijkstra.md
       - file: tp/tp_tsp/tp_tsp.ipynb
       - file: 5_couplage/couplage.ipynb
-      - file: 4_kruskal/td/td_kruskal_dijkstra_couplage.md
