@@ -47,3 +47,6 @@ parts:
       - file: tp/tp_tsp/tp_tsp.ipynb
       - file: 5_couplage/couplage.ipynb
       - file: 4_kruskal/td/td_kruskal_dijkstra_couplage.md
+  - caption: Langages et automates
+    chapters:
+      - file: files/6_langage/langage.ipynb
