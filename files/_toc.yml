@@ -49,4 +49,4 @@ parts:
       - file: 4_kruskal/td/td_kruskal_dijkstra_couplage.md
   - caption: Langages et automates
     chapters:
-      - file: files/6_langage/langage.ipynb
+      - file: 6_langage/langage.ipynb
