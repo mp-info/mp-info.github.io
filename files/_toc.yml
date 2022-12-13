@@ -14,39 +14,47 @@ parts:
           - file: 1_revisions/agreg.md
           # - file: 1_revisions/ocaml_quizz.md
       - file: rc.md
-  - caption: DS et DM
-    chapters:
-      - url: https://fortierq-mp-info-notes-grade-n9onka.streamlit.app
-        title: Notes et classements
-      - file: ds/ds1/ds1.md
+      - file: ds/ds_dm.md
         sections:
-          - file: ds/ds1/cs21_cor.ipynb
-          - file: ds/ds1/revisions.md
-      - url: https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/dm/dm1/x17_cor.pdf
-        title: "DM1 : Corrigé"
+          - url: https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/dm/dm1/x17_cor.pdf
+            title: "DM1 : Corrigé"
+          - file: ds/ds1/ds1.md
+            sections:
+            - file: ds/ds1/cs21_cor.ipynb
+            - file: ds/ds1/revisions.md
+  # - caption: DS et DM
+  #   chapters:
+  #     - url: https://fortierq-mp-info-notes-grade-n9onka.streamlit.app
+  #       title: Notes et classements
   - caption: Théorie des graphes
     chapters:
-      - file: 2_arbre_graphe/0_definition/0_graph_def.md
-        sections: 
-          - file: 2_arbre_graphe/0_definition/td/td_graph_def.md
-      - file: 2_arbre_graphe/1_representation/representation.ipynb
+      - file: 2_arbre_graphe/cours.md
         sections:
-          - file: 2_arbre_graphe/1_representation/representation_devoir.ipynb
-      - file: 2_arbre_graphe/2_parcours/parcours.md
+        - file: 2_arbre_graphe/0_definition/0_graph_def.md
+        - file: 2_arbre_graphe/1_representation/representation.ipynb
+        - file: 2_arbre_graphe/2_parcours/parcours.md
+          sections:
+            - file: 2_arbre_graphe/2_parcours/1_dfs.ipynb
+            - file: 2_arbre_graphe/2_parcours/2_bfs.ipynb
+            - file: 2_arbre_graphe/2_parcours/animation_traversal.ipynb
+        - file: 3_heap/heap.md
+          sections:
+            - file: 3_heap/1_heap/heap.ipynb
+            - file: 3_heap/2_dijkstra/dijkstra.ipynb
+        - file: 4_kruskal/kruskal.ipynb
+        - file: 5_couplage/couplage.ipynb
+        - file: 2_arbre_graphe/qcm.md
+          title: QCM Graphes
+      - file: 2_arbre_graphe/exercices.md
         sections:
-          - file: 2_arbre_graphe/2_parcours/1_dfs.ipynb
-          - file: 2_arbre_graphe/2_parcours/2_bfs.ipynb
-          - file: 2_arbre_graphe/2_parcours/animation_traversal.ipynb
-          - file: 2_arbre_graphe/2_parcours/td_parcours/td_parcours.ipynb
-      - file: 3_heap/heap.md
-        sections:
-          - file: 3_heap/1_heap/heap.ipynb
-          - file: 3_heap/1_heap/td/td_heap.ipynb
-          - file: 3_heap/2_dijkstra/dijkstra.ipynb
-      - file: 4_kruskal/kruskal.ipynb
-      - file: tp/tp_tsp/tp_tsp.ipynb
-      - file: 5_couplage/couplage.ipynb
-      - file: 4_kruskal/td/td_kruskal_dijkstra_couplage.md
+        - file: 2_arbre_graphe/0_definition/td/td_graph_def.md
+        - file: 2_arbre_graphe/1_representation/representation_devoir.ipynb
+        - file: 2_arbre_graphe/2_parcours/td_parcours/td_parcours.ipynb
+        - file: 3_heap/1_heap/td/td_heap.ipynb
+        - file: tp/tp_tsp/tp_tsp.ipynb
+        - file: 4_kruskal/td/td_kruskal_dijkstra_couplage.md
   - caption: Langages et automates
     chapters:
-      - file: 6_langage/langage.ipynb
+      - file: 6_langage/cours.md
+        sections:
+        - file: 6_langage/langage.ipynb
