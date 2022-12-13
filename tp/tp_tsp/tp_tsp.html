@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>TP 1 : 2-approximation du voyageur de commerce &#8212; MP/MP* Option informatique</title>
+    <title>TP : 2-approximation du voyageur de commerce &#8212; MP/MP* Option informatique</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -91,8 +91,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://mp-info.github.io/tp/tp_tsp/tp_tsp.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Couplage dans un graphe biparti" href="../../5_couplage/couplage.html" />
-    <link rel="prev" title="Arbre couvrant de poids minimal" href="../../4_kruskal/kruskal.html" />
+    <link rel="next" title="TD : Algorithmes de Kruskal, Dijkstra et couplage" href="../../4_kruskal/td/td_kruskal_dijkstra_couplage.html" />
+    <link rel="prev" title="TD : File de priorité" href="../../3_heap/1_heap/td/td_heap.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -182,21 +182,9 @@ const thebe_selector_output = ".output, .cell_output"
    Ressources
   </a>
  </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  DS et DM
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference external" href="https://fortierq-mp-info-notes-grade-n9onka.streamlit.app">
-   Notes et classements
-  </a>
- </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../ds/ds1/ds1.html">
-   DS 1
+  <a class="reference internal" href="../../ds/ds_dm.html">
+   DS et DM
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -205,21 +193,33 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../ds/ds1/cs21_cor.html">
-     DS 1 : Corrigé
+    <a class="reference external" href="https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/dm/dm1/x17_cor.pdf">
+     DM1 : Corrigé
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ds/ds1/revisions.html">
-     DS 1 : Programme
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../ds/ds1/ds1.html">
+     DS 1
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../ds/ds1/cs21_cor.html">
+       DS 1 : Corrigé
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../ds/ds1/revisions.html">
+       DS 1 : Programme
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/dm/dm1/x17_cor.pdf">
-   DM1 : Corrigé
-  </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -229,25 +229,8 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../2_arbre_graphe/0_definition/0_graph_def.html">
-   Définitions sur les graphes
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../2_arbre_graphe/0_definition/td/td_graph_def.html">
-     TD : Définitions sur les graphes
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../2_arbre_graphe/1_representation/representation.html">
-   Représentations de graphe
+  <a class="reference internal" href="../../2_arbre_graphe/cours.html">
+   Cours
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -256,35 +239,94 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../2_arbre_graphe/1_representation/representation_devoir.html">
-     Devoir : représentation de graphes
+    <a class="reference internal" href="../../2_arbre_graphe/0_definition/0_graph_def.html">
+     Définitions sur les graphes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_arbre_graphe/1_representation/representation.html">
+     Représentations de graphe
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../2_arbre_graphe/2_parcours/parcours.html">
+     Parcours de graphe
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../2_arbre_graphe/2_parcours/1_dfs.html">
+       Parcours en profondeur
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../2_arbre_graphe/2_parcours/2_bfs.html">
+       Parcours en largeur
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../2_arbre_graphe/2_parcours/animation_traversal.html">
+       Animation des parcours
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../3_heap/heap.html">
+     File de priorité et applications
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../3_heap/1_heap/heap.html">
+       File de priorité
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../3_heap/2_dijkstra/dijkstra.html">
+       Algorithme de Dijkstra
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_kruskal/kruskal.html">
+     Arbre couvrant de poids minimal
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../5_couplage/couplage.html">
+     Couplage dans un graphe biparti
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../2_arbre_graphe/2_parcours/parcours.html">
-   Parcours de graphe
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../2_arbre_graphe/exercices.html">
+   Exercices
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../../2_arbre_graphe/2_parcours/1_dfs.html">
-     Parcours en profondeur
+    <a class="reference internal" href="../../2_arbre_graphe/0_definition/td/td_graph_def.html">
+     TD : Définitions sur les graphes
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../2_arbre_graphe/2_parcours/2_bfs.html">
-     Parcours en largeur
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../2_arbre_graphe/2_parcours/animation_traversal.html">
-     Animation des parcours
+    <a class="reference internal" href="../../2_arbre_graphe/1_representation/representation_devoir.html">
+     Devoir : représentation de graphes
     </a>
    </li>
    <li class="toctree-l2">
@@ -292,54 +334,22 @@ const thebe_selector_output = ".output, .cell_output"
      TD : Représentation et parcours de graphes
     </a>
    </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../3_heap/heap.html">
-   File de priorité et applications
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../3_heap/1_heap/heap.html">
-     File de priorité
-    </a>
-   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../3_heap/1_heap/td/td_heap.html">
      TD : File de priorité
     </a>
    </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     TP : 2-approximation du voyageur de commerce
+    </a>
+   </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../3_heap/2_dijkstra/dijkstra.html">
-     Algorithme de Dijkstra
+    <a class="reference internal" href="../../4_kruskal/td/td_kruskal_dijkstra_couplage.html">
+     TD : Algorithmes de Kruskal, Dijkstra et couplage
     </a>
    </li>
   </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../4_kruskal/kruskal.html">
-   Arbre couvrant de poids minimal
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   TP 1 : 2-approximation du voyageur de commerce
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../5_couplage/couplage.html">
-   Couplage dans un graphe biparti
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../4_kruskal/td/td_kruskal_dijkstra_couplage.html">
-   TD : Algorithmes de Kruskal, Dijkstra et couplage
-  </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -348,10 +358,22 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../6_langage/langage.html">
-   Langages rationnels
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../6_langage/cours.html">
+   Cours
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../6_langage/langage.html">
+     Langages rationnels
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -624,7 +646,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>TP 1 : 2-approximation du voyageur de commerce</h1>
+                <h1>TP : 2-approximation du voyageur de commerce</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -669,8 +691,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tp-1-2-approximation-du-voyageur-de-commerce">
-<h1>TP 1 : 2-approximation du voyageur de commerce<a class="headerlink" href="#tp-1-2-approximation-du-voyageur-de-commerce" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="tp-2-approximation-du-voyageur-de-commerce">
+<h1>TP : 2-approximation du voyageur de commerce<a class="headerlink" href="#tp-2-approximation-du-voyageur-de-commerce" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>Ce TP est à rendre au plus tard ce <strong>dimanche 27 novembre</strong>. Le plus simple est de répondre à ce TP sur <a class="reference external" href="https://cas.ent.auvergnerhonealpes.fr/login?service=https%3A//capytale2.ac-paris.fr/web/c-auth/pvd/mcer/connect">Capytale</a>. J’aurai alors directement accès à votre fichier que je commenterai.<br />
 <a class="reference external" href="https://capytale2.ac-paris.fr/web/c/6116-1007301"><strong>Lien pour répondre au TP sur Capytale (se connecter avec les identifiants ENT puis cliquer sur Go !).</strong></a><br />
@@ -1121,17 +1143,17 @@ Remarque : on pourrait aussi utiliser n’importe quel algorithme de tri, comme 
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../../4_kruskal/kruskal.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../../3_heap/1_heap/td/td_heap.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Arbre couvrant de poids minimal</p>
+            <p class="prev-next-title">TD : File de priorité</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../../5_couplage/couplage.html" title="next page">
+    <a class='right-next' id="next-link" href="../../4_kruskal/td/td_kruskal_dijkstra_couplage.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Couplage dans un graphe biparti</p>
+        <p class="prev-next-title">TD : Algorithmes de Kruskal, Dijkstra et couplage</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
