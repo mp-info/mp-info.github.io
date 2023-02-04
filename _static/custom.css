@@ -1,0 +1,13 @@
+.highlight pre {
+    border-left-color: green;
+    border-left-width: medium;
+}
+
+.highlight-default .highlight pre {
+    border-left-color: #ccc;
+    border-width: 0px;
+}
+
+h1 {
+    text-align: center;
+}
