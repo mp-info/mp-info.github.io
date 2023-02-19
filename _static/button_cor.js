@@ -1,5 +1,5 @@
 function url(pdf) {
-    return 'https://mozilla.github.io/pdf.js/web/viewer.html?file=' + pdf + '#zoom=page-fit&pagemode=none';
+    return 'https://mozilla.github.io/pdf.js/web/viewer.html?file=' + pdf + '#zoom=page-width&pagemode=none';
 }
 
 function button_cor(pdf, id_pdf, id_button) {

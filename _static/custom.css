@@ -11,3 +11,8 @@
 h1 {
     text-align: center;
 }
+
+@media (min-width: 768px)
+#main-content {
+  max-width: 100%;
+}
