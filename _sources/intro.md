@@ -3,7 +3,7 @@
 <div id="" style="border-style:dotted; border-width:1px; overflow:scroll; height:100px;">
 <center><b>Dernières modifications</b></center>
 <ul>
-<li>Ajout corrigé TD langagages rationnels</li>
+<li>Ajout corrigé TD langagages rationnels et DM</li>
 <li><a href=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/1_revisions/revisions_ocaml.pdf>Erreurs fréquentes en OCaml</a></li>
 <li><a href=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/ds/ds2/ds2_cor.pdf>Ajout corrigé dernier DS 2</a></li>
 <li><a href=https://mp-info.github.io/4_kruskal/td/td_kruskal_dijkstra_couplage.html>Ajout corrigé dernier TD</a></li>
