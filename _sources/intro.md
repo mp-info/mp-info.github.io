@@ -1,6 +1,6 @@
 # Option informatique en MP/MP\* <br/> Lycée La Martinière Monplaisir
 
-[Sujets corrigés d'oral ENS informatique](https://a3nm.net/work/exams/ens/)
+[Sujets corrigés d'oral ENS informatique](https://diplome.di.ens.fr/informatique-ens/annales.html)
 
 <div id="" style="border-style:dotted; border-width:1px; overflow:scroll; height:100px;">
 <center><b>Dernières modifications</b></center>
