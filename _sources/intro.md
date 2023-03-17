@@ -2,6 +2,8 @@
 
 [Sujets corrigés d'oral ENS informatique](https://diplome.di.ens.fr/informatique-ens/annales.html)
 
+[Sujet Centrale sur les automates](https://www.concours-centrale-supelec.fr/CentraleSupelec/2022/MP/sujets/N007.pdf) [Rapport](https://www.concours-centrale-supelec.fr/CentraleSupelec/2022/MP/sujets/MPe-OpIn.pdf) [Corrigé](https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/dm/centrale-mp-2022-info-corrige.pdf)
+
 <div id="" style="border-style:dotted; border-width:1px; overflow:scroll; height:100px;">
 <center><b>Dernières modifications</b></center>
 <ul>
