@@ -3,16 +3,16 @@
 <script>
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
-        button_9 = button_cor(
+        button_10 = button_cor(
             'https://raw.githubusercontent.com/fortierq/cours/main/langage/kleene/td/td_kleene.pdf',
-            '9',
-            'button_9'
+            '10',
+            'button_10'
         );
     });
 </script>
 
 ```{margin}
-<input type="button" id="button_9" onclick="button_9.switch()" />
+<input type="button" id="button_10" onclick="button_10.switch()" />
 ```
 
-<iframe id="9" height=1100 width=100% allowfullscreen></iframe>
+<iframe id="10" height=1100 width=100% allowfullscreen></iframe>

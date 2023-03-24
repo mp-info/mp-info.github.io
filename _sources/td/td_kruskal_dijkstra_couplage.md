@@ -3,16 +3,16 @@
 <script>
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
-        button_5 = button_cor(
+        button_6 = button_cor(
             'https://raw.githubusercontent.com/fortierq/cours/main/graphe/td_kruskal_dijkstra_couplage/td_kruskal_dijkstra_couplage.pdf',
-            '5',
-            'button_5'
+            '6',
+            'button_6'
         );
     });
 </script>
 
 ```{margin}
-<input type="button" id="button_5" onclick="button_5.switch()" />
+<input type="button" id="button_6" onclick="button_6.switch()" />
 ```
 
-<iframe id="5" height=1100 width=100% allowfullscreen></iframe>
+<iframe id="6" height=1100 width=100% allowfullscreen></iframe>
