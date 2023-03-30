@@ -4,7 +4,7 @@
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
         button_1 = button_cor(
-            'https://raw.githubusercontent.com/fortierq/cours/main/resume/resume_option/resume_option.pdf',
+            'https://raw.githubusercontent.com/fortierq/cours/main/revisions/option/resume_option/resume_option.pdf',
             '1',
             'button_1'
         );
