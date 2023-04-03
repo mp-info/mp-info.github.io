@@ -1548,9 +1548,9 @@ u_{n+1} &amp;= \begin{cases} \frac{u_n}{2} &amp; \text{si } u_n \text{ est pair}
 <p class="admonition-title">Question</p>
 <p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">nb_aretes</span> <span class="pre">:</span> <span class="pre">int</span> <span class="pre">list</span> <span class="pre">array</span> <span class="pre">-&gt;</span> <span class="pre">int</span></code> qui calcule le nombre d’arêtes d’un graphe non orienté donné par liste d’adjacence.</p>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">nb_aretes</span> <span class="n">g</span> <span class="o">=</span>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">nb_aretes</span> <span class="n">g</span> <span class="o">=</span>
   <span class="k">let</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">g</span> <span class="k">in</span>
   <span class="k">let</span> <span class="n">res</span> <span class="o">=</span> <span class="n">ref</span> <span class="mi">0</span> <span class="k">in</span>
   <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">do</span>
@@ -1559,11 +1559,10 @@ u_{n+1} &amp;= \begin{cases} \frac{u_n}{2} &amp; \text{si } u_n \text{ est pair}
   <span class="o">!</span><span class="n">res</span><span class="o">/</span><span class="mi">2</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val nb_aretes : &#39;a list array -&gt; int = &lt;fun&gt;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">nb_aretes</span> <span class="p">:</span> <span class="s1">&#39;a list array -&gt; int = &lt;fun&gt;</span>
+
+
 </pre></div>
-</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1582,9 +1581,9 @@ u_{n+1} &amp;= \begin{cases} \frac{u_n}{2} &amp; \text{si } u_n \text{ est pair}
 <p class="admonition-title">Question</p>
 <p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">list_to_mat</span> <span class="pre">:</span> <span class="pre">int</span> <span class="pre">list</span> <span class="pre">array</span> <span class="pre">-&gt;</span> <span class="pre">int</span> <span class="pre">array</span> <span class="pre">array</span></code> qui transforme une liste d’adjacence en matrice d’adjacence.</p>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">list_to_mat</span> <span class="n">l</span> <span class="o">=</span>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">list_to_mat</span> <span class="n">l</span> <span class="o">=</span>
   <span class="k">let</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">l</span> <span class="k">in</span>
   <span class="k">let</span> <span class="n">m</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make_matrix</span> <span class="n">n</span> <span class="n">n</span> <span class="mi">0</span> <span class="k">in</span>
   <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">do</span>
@@ -1594,11 +1593,10 @@ u_{n+1} &amp;= \begin{cases} \frac{u_n}{2} &amp; \text{si } u_n \text{ est pair}
   <span class="n">m</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val list_to_mat : int list array -&gt; int array array = &lt;fun&gt;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">list_to_mat</span> <span class="p">:</span> <span class="nb">int</span> <span class="nb">list</span> <span class="n">array</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="n">array</span> <span class="n">array</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">fun</span><span class="o">&gt;</span>
+
+
 </pre></div>
-</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1618,9 +1616,9 @@ u_{n+1} &amp;= \begin{cases} \frac{u_n}{2} &amp; \text{si } u_n \text{ est pair}
 <p class="admonition-title">Question</p>
 <p>Écrire une fonction <code class="docutils literal notranslate"><span class="pre">mat_to_list</span> <span class="pre">:</span> <span class="pre">int</span> <span class="pre">array</span> <span class="pre">array</span> <span class="pre">-&gt;</span> <span class="pre">int</span> <span class="pre">list</span> <span class="pre">array</span></code> qui convertit une matrice d’adjacence en liste d’adjacence.</p>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-OCaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">mat_to_list</span> <span class="n">m</span> <span class="o">=</span>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-ocaml notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="n">mat_to_list</span> <span class="n">m</span> <span class="o">=</span>
   <span class="k">let</span> <span class="n">n</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">length</span> <span class="n">m</span> <span class="k">in</span>
   <span class="k">let</span> <span class="n">g</span> <span class="o">=</span> <span class="nn">Array</span><span class="p">.</span><span class="n">make</span> <span class="n">n</span> <span class="bp">[]</span> <span class="k">in</span>
   <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">to</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">do</span>
@@ -1631,11 +1629,10 @@ u_{n+1} &amp;= \begin{cases} \frac{u_n}{2} &amp; \text{si } u_n \text{ est pair}
   <span class="n">g</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>val mat_to_list : int array array -&gt; int list array = &lt;fun&gt;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">val</span> <span class="n">mat_to_list</span> <span class="p">:</span> <span class="nb">int</span> <span class="n">array</span> <span class="n">array</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="nb">list</span> <span class="n">array</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">fun</span><span class="o">&gt;</span>
+
+
 </pre></div>
-</div>
 </div>
 </div>
 <div class="cell docutils container">
