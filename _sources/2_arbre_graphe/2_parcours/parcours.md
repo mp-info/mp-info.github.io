@@ -1,4 +1,0 @@
-# Parcours de graphe
-
-```{tableofcontents}
-```
