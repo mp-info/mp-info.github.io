@@ -1,20 +1,19 @@
 # Option informatique en MP/MP\* <br/> Lycée La Martinière Monplaisir
 
+- [Programme officiel](https://prepas.org/index.php?document=86)
+- [Sujets corrigés d'oral ENS informatique](https://diplome.di.ens.fr/informatique-ens/annales.html)
+
 <details>
-<summary>Informatique commune aux concours</summary>
+<summary>Option informatique aux concours</summary>
 
 Concours | Durée | Coefficient (% écrit) | Autres
 :---: | :---: | :---: | :---:
-[CCINP PC/PSI](https://www.concours-commun-inp.fr/fr/epreuves/annales/annales-pc.html) | 3h | 10% | modélisation
-[CCINP MP](https://www.concours-commun-inp.fr/fr/epreuves/annales/annales-mp.html) | | $\approx$ 10% | épreuve d'option + math 1
-[Mines-Ponts](https://www.concoursminesponts.fr) | 2h | 7% |
-[Centrale-Supélec PC/PSI (à confirmer)](https://www.concours-centrale-supelec.fr) | 2h QCM | 8% |
-[Centrale-Supélec MP (à confirmer)](https://www.concours-centrale-supelec.fr) | 0 | 0% |
-[X-ENS](https://www.concours-centrale-supelec.fr) | 2h | 10% | modélisation
-https://banques-ecoles.fr/cms/wp-content/uploads/2023/01/Version-complete-combinee.pdf
+[CCINP](https://www.concours-commun-inp.fr/fr/epreuves/les-epreuves-ecrites.html) | 4 | 12% |
+[Mines-Ponts](https://www.concoursminesponts.fr) | 3h | 7% |
+[Centrale-Supélec](https://www.concours-centrale-supelec.fr) | 4h | 14% |
+[X-ENS](https://banques-ecoles.fr/cms/wp-content/uploads/2023/01/Version-complete-combinee.pdf) | 4h | | 
 </details>
 
-[Sujets corrigés d'oral ENS informatique](https://diplome.di.ens.fr/informatique-ens/annales.html)
 
 <div id="" style="border-style:dotted; border-width:1px; overflow:scroll; height:100px;">
 <center><b>Dernières modifications</b></center>
