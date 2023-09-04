@@ -1,7 +1,12 @@
 # Option informatique en MP/MP\* <br/> Lycée La Martinière Monplaisir
 
-- [Programme officiel](https://prepas.org/index.php?document=86)
-- [Sujets corrigés d'oral ENS informatique](https://diplome.di.ens.fr/informatique-ens/annales.html)
+<div id="" style="border-style:dotted; border-width:1px; overflow:scroll; height:100px;">
+<center><b>Dernières modifications</b></center>
+<ul>
+<li>Rentrée 2023-2024</li>
+</ul>
+</div> 
+<br />
 
 <details>
 <summary>Option informatique aux concours</summary>
@@ -14,13 +19,7 @@ Concours | Durée | Coefficient (% écrit) | Autres
 [X-ENS](https://banques-ecoles.fr/cms/wp-content/uploads/2023/01/Version-complete-combinee.pdf) | 4h | | 
 </details>
 
-
-<div id="" style="border-style:dotted; border-width:1px; overflow:scroll; height:100px;">
-<center><b>Dernières modifications</b></center>
-<ul>
-<li>Rentrée 2023-2024</li>
-</ul>
-</div> 
-<br />
+- [Programme officiel](https://prepas.org/index.php?document=86)
+- [Sujets corrigés d'oral ENS informatique](https://diplome.di.ens.fr/informatique-ens/annales.html)
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&showPrint=0&showTabs=1&showCalendars=1&showTz=0&src=MzNiNnExY2ppOW84ZDBhcm8yc3R0Z3BtM29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=M2hha3JjZmVkMGswNTI2YXYzNzIwaWdqdW9nYTVsODFAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZnIuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23D50000&color=%23E4C441&color=%230B8043" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
