@@ -16,20 +16,10 @@ https://banques-ecoles.fr/cms/wp-content/uploads/2023/01/Version-complete-combin
 
 [Sujets corrigés d'oral ENS informatique](https://diplome.di.ens.fr/informatique-ens/annales.html)
 
-[Sujet Centrale sur les automates](https://www.concours-centrale-supelec.fr/CentraleSupelec/2022/MP/sujets/N007.pdf) [Rapport](https://www.concours-centrale-supelec.fr/CentraleSupelec/2022/MP/sujets/MPe-OpIn.pdf) [Corrigé](https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/dm/centrale-mp-2022-info-corrige.pdf)
-
 <div id="" style="border-style:dotted; border-width:1px; overflow:scroll; height:100px;">
 <center><b>Dernières modifications</b></center>
 <ul>
-<li>Ajout corrigé TD langagages rationnels et DM</li>
-<li><a href=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/1_revisions/revisions_ocaml.pdf>Erreurs fréquentes en OCaml</a></li>
-<li><a href=https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/ds/ds2/ds2_cor.pdf>Ajout corrigé dernier DS 2</a></li>
-<li><a href=https://mp-info.github.io/4_kruskal/td/td_kruskal_dijkstra_couplage.html>Ajout corrigé dernier TD</a></li>
-<li><a href="https://capytale2.ac-paris.fr/web/c/6116-1007301">Votre TP voyageur de commerce est à nouveau disponible</a></li>
-<li><a href="https://adventofcode.com">Advent of code</a> propose un exo par jour jusqu'au 25 décembre</li>
-<li>Ajout corrigé TP voyageur de commerce</li>
-<li>Ajout corrigé TD file de priorité</li>
-<li><a href=https://github.com/mp-info/mp-info.github.io/discussions>Ajout d'un espace discussion pour poser des questions</a></li>
+<li>Rentrée 2023-2024</li>
 </ul>
 </div> 
 <br />
