@@ -1,3 +1,11 @@
 output
 .env
 *.pyc
+files/_toc.yml
+files/8_kleene
+files/7_automate
+files/6_langage
+files/5_couplage
+files/4_kruskal
+files/3_heap
+files/2_arbre_graphe

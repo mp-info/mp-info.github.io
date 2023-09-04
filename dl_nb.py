@@ -15,6 +15,8 @@ else:
     subprocess.run(["git", "pull"], cwd=dir_repo)
 menu, td = 0, 0
 
+menu, td = 0, 0
+
 def iframe_td(p):
     global td
     td += 1
@@ -79,7 +81,7 @@ def get_dl(d):
                     s += f'\n{iframe_td(Path(d["file"]))}'                    
                 p.write_text(s)
                 d["file"] = str(p.relative_to("files"))
-            if k in ["tp", "cor", "menu", "slides", "slides_ipynb", "td"]:
+            if k in ["tp", "cor", "menu", "slides", "slides_ipynb", "td"]: 
                 del d[k]
             else:
                 get_dl(d[k])
