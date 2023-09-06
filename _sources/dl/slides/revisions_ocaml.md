@@ -1,2 +1,2 @@
-# Erreurs fréquentes en OCaml
+# Révisions OCaml
 <iframe src=https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/fortierq/cours/main/ocaml/revision/revisions_ocaml.pdf#zoom=page-fit&pagemode=none height=500 width=100% allowfullscreen></iframe>
