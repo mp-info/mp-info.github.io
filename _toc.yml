@@ -9,7 +9,7 @@ parts:
     chapters:
       - menu: Révisions OCaml
         sections:
-          - slides: Erreurs fréquentes en OCaml
+          - slides: Révisions OCaml
             file: ocaml/revision/revisions_ocaml.pdf
           - file: 1_revisions/ocaml.ipynb
           - td: "TD : CCINP 2023 + CCS 2023"
