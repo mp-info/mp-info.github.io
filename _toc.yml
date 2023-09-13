@@ -42,13 +42,22 @@ parts:
   #   chapters:
   #     - url: https://fortierq-mp-info-notes-grade-n9onka.streamlit.app
   #       title: Notes et classements
-  # - caption: Théorie des graphes
-  #   chapters:
-  #     - file: 2_arbre_graphe/cours.md
-  #       sections:
-  #       - file: 2_arbre_graphe/0_definition/0_graph_def.md
-  #       - file: 2_arbre_graphe/1_representation/representation.ipynb
-  #       - file: 2_arbre_graphe/2_parcours/parcours.md
+  - caption: Théorie des graphes
+    chapters:
+      - menu: Cours
+        sections:
+        - slides: 'Graphes : Définitions'
+          file: graphe/def/option/cours/1_graph_def.pdf
+        - slides_ipynb: graphe/def/option/cours/2_representation.ipynb
+      - menu: Exercices
+        sections:
+        - td: "TD : Définitions sur les graphes"
+          file: graphe/def/option/td/td_graph_def.pdf
+        # - td: "TD : Représentations et parcours de graphes"
+        #   file: graphe/def/option/td/td_graphes_parcours.pdf
+
+        # - file: 2_arbre_graphe/1_representation/representation.ipynb
+        # - file: 2_arbre_graphe/2_parcours/parcours.md
   #         sections:
   #           - slides: "Parcours en profondeur"
   #             file: graphe/dfs/dfs.pdf
