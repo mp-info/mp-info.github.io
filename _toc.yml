@@ -14,6 +14,8 @@ parts:
           - file: 1_revisions/ocaml.ipynb
           - td: "TD : CCINP 2023 + CCS 2023"
             file: ocaml/revision/td_revisions_ccinp23_cs23.pdf
+          - td: "Copie élève CCS 2023"
+            file: ocaml/revision/ccs23_eleve.pdf
       # - file: ds/ds_dm.md
       #   sections:
       #     - url: https://fortierq-notes-app-ctedub.streamlit.app
