@@ -3,16 +3,16 @@
 <script>
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
-        button_2 = button_cor(
+        button_3 = button_cor(
             'https://raw.githubusercontent.com/fortierq/cours/main/graphe/def/option/td/td_graph_def.pdf',
-            '2',
-            'button_2'
+            '3',
+            'button_3'
         );
     });
 </script>
 
 ```{margin}
-<input type="button" id="button_2" onclick="button_2.switch()" />
+<input type="button" id="button_3" onclick="button_3.switch()" />
 ```
 
-<iframe id="2" height=1100 width=100% allowfullscreen></iframe>
+<iframe id="3" height=1100 width=100% allowfullscreen></iframe>
