@@ -44,17 +44,23 @@ parts:
   #   chapters:
   #     - url: https://fortierq-mp-info-notes-grade-n9onka.streamlit.app
   #       title: Notes et classements
-  - caption: Théorie des graphes
+  - caption: Rappels sur les graphes
     chapters:
       - menu: Cours
         sections:
-        - slides: 'Graphes : Définitions'
+        - slides: 'Définitions sur les graphes'
           file: graphe/def/option/cours/1_graph_def.pdf
         - slides_ipynb: graphe/def/option/cours/2_representation.ipynb
+        - slides_ipynb: graphe/def/option/cours/3_dfs.ipynb
+        - slides_ipynb: graphe/def/option/cours/4_bfs.ipynb
+        - tp: graphe/def/option/cours/animation_traversal.ipynb
+        - tp: graphe/def/option/cours/labyrinth.ipynb
       - menu: Exercices
         sections:
         - td: "TD : Définitions sur les graphes"
           file: graphe/def/option/td/td_graph_def.pdf
+        - td: "TD : Représentations et parcours de graphes"
+          file: graphe/def/option/td/td_graphes_parcours.pdf
         # - td: "TD : Représentations et parcours de graphes"
         #   file: graphe/def/option/td/td_graphes_parcours.pdf
 
