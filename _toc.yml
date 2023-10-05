@@ -67,6 +67,10 @@ parts:
         sections:
         - slides: 'Arbre couvrant de poids minimum'
           file: graphe/mst/kruskal/cours/kruskal.pdf
+      - menu: Exercices
+        sections:
+        - td: "TD : Arbres couvrants et algorithme de Kruskal"
+          file: /graphe/td_kruskal_dijkstra_couplage/td_kruskal_dijkstra_couplage.pdf
         # - td: "TD : Représentations et parcours de graphes"
         #   file: graphe/def/option/td/td_graphes_parcours.pdf
 
