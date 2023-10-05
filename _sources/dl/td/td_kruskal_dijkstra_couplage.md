@@ -4,7 +4,7 @@
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
         button_5 = button_cor(
-            'https://raw.githubusercontent.com/fortierq/cours/main//graphe/td_kruskal_dijkstra_couplage/td_kruskal_dijkstra_couplage.pdf',
+            'https://raw.githubusercontent.com/fortierq/cours/main/graphe/td_kruskal_dijkstra_couplage/td_kruskal_dijkstra_couplage.pdf',
             '5',
             'button_5'
         );
