@@ -1,0 +1,2 @@
+# Couplage maximum dans un graphe biparti
+<iframe src=https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/fortierq/cours/main/graphe/couplage/cours/couplage.pdf#zoom=page-fit&pagemode=none height=500 width=100% allowfullscreen></iframe>
