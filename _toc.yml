@@ -71,6 +71,8 @@ parts:
         sections:
         - td: "TD : Arbres couvrants et algorithme de Kruskal"
           file: graphe/mst/td/td_kruskal.pdf
+        - url: https://mp2i-info.github.io/6_graph/td/xens_14_arbres_couvrants.pdf
+          title: "X-ENS 2014 : Arbres couvrants de poids minimum"
   - caption: Couplage maximum dans un graphe biparti
     chapters:
       - menu: Cours
