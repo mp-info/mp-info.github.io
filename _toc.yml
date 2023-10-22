@@ -73,6 +73,8 @@ parts:
           file: graphe/mst/td/td_kruskal.pdf
         - url: https://mp2i-info.github.io/6_graph/td/xens_14_arbres_couvrants.pdf
           title: "X-ENS 2014 : Arbres couvrants de poids minimum"
+        - url: https://banques-ecoles.fr/cms/wp-content/uploads/2014/06/14_mp_sujet_zero_Info_a_aveccorrige.pdf
+          title: "X-ENS 2014 : Corrigé"
   - caption: Couplage maximum dans un graphe biparti
     chapters:
       - menu: Cours
