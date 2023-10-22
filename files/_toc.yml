@@ -9,4 +9,18 @@ parts:
     - file: slides/revisions_ocaml.md
     - file: 1_revisions/ocaml.ipynb
     - file: td/td_revisions_ccinp23_cs23.md
+    - file: td/ccs23_eleve.md
+- caption: "Th\xE9orie des graphes"
+  chapters:
+  - file: menu/1.md
+    sections:
+    - file: slides/1_graph_def.md
+    - file: dl/graphe/def/option/cours/2_representation.ipynb
+    - file: dl/graphe/def/option/cours/3_dfs.ipynb
+    - file: dl/graphe/def/option/cours/4_bfs.ipynb
+    - file: dl/graphe/def/option/cours/animation_traversal.ipynb
+    - file: dl/graphe/def/option/cours/labyrinth.ipynb
+  - file: menu/2.md
+    sections:
+    - file: td/td_graph_def.md
 root: intro
