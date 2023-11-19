@@ -5,6 +5,12 @@ root: intro
 options:
   numbered: True
 parts:
+  - caption: DS
+    chapters:
+      - title: Détail des notes
+        url: https://fortierq-notes-app-ctedub.streamlit.app
+      - td: "DS 1 corrigé : Centrale 2015"
+        file: centrale_2015.pdf
   - caption: Généralités
     chapters:
       - menu: Révisions OCaml
