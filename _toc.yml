@@ -92,7 +92,17 @@ parts:
       - menu: Exercices
         sections:
         - td: "TD : Couplage maximum dans un graphe biparti"
-          file: graphe/couplage/td/td_couplage.pdf  
+          file: graphe/couplage/td/td_couplage.pdf
+  - caption: Tas et file de priorité
+    chapters:
+      - menu: Cours
+        sections:
+        - slides: 'Tas et file de priorité'
+          file: graphe/heap/cours/heap.pdf
+      - menu: Exercices
+        sections:
+        - td: "TD : Tas et file de priorité"
+          file: graphe/heap/td/td_heap.pdf
         # - td: "TD : Représentations et parcours de graphes"
         #   file: graphe/def/option/td/td_graphes_parcours.pdf
 
