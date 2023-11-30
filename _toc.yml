@@ -103,6 +103,12 @@ parts:
         sections:
         - td: "TD : Tas et file de priorité"
           file: graphe/heap/td/td_heap.pdf
+  - caption: Langages réguliers
+    chapters:
+      - menu: Cours
+        sections:
+        - slides: 'Langages réguliers'
+          file: langage/langage/cours/langage.pdf
         # - td: "TD : Représentations et parcours de graphes"
         #   file: graphe/def/option/td/td_graphes_parcours.pdf
 
