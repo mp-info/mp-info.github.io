@@ -16,7 +16,7 @@ jobs:
         fetch-depth: 0
     
     - name: "Download notebooks"
-      run: curl -O https://raw.githubusercontent.com/fortierq/scripts/main/cours/dl_nb.py; python3 dl_nb.py ${{secrets.TOKEN}}
+      run: curl -O https://raw.githubusercontent.com/fortierq/scripts/main/cours/dl_nb.py; python3 dl_nb.py ${{secrets.TOKEN2}}
 
     - name: Add notes
       run: python /addnote.py $(pwd)/files
