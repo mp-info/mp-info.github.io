@@ -4,7 +4,7 @@
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
         button_10 = button_cor(
-            'https://raw.githubusercontent.com/fortierq/cours/main/langage/langage/td/td_langage.pdf',
+            'https://raw.githubusercontent.com/fortierq/cours/main/langage/langage/cours/td/td_langage.pdf',
             '10',
             'button_10'
         );
