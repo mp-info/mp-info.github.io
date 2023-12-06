@@ -112,7 +112,7 @@ parts:
       - menu: Exercices
         sections:
         - td: "TD : Langages réguliers"
-          file: langage/langage/td/td_langage.pdf
+          file: langage/langage/cours/td/td_langage.pdf
         # - td: "TD : Représentations et parcours de graphes"
         #   file: graphe/def/option/td/td_graphes_parcours.pdf
         # - file: 2_arbre_graphe/1_representation/representation.ipynb
