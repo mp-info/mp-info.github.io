@@ -113,35 +113,6 @@ parts:
         sections:
         - td: "TD : Langages réguliers"
           file: langage/langage/cours/td/td_langage.pdf
-        # - td: "TD : Représentations et parcours de graphes"
-        #   file: graphe/def/option/td/td_graphes_parcours.pdf
-        # - file: 2_arbre_graphe/1_representation/representation.ipynb
-        # - file: 2_arbre_graphe/2_parcours/parcours.md
-  #         sections:
-  #           - slides: "Parcours en profondeur"
-  #             file: graphe/dfs/dfs.pdf
-  #           - file: 2_arbre_graphe/2_parcours/2_bfs.ipynb
-  #           - file: 2_arbre_graphe/2_parcours/animation_traversal.ipynb
-  #       - file: 3_heap/heap.md
-  #         sections:
-  #           - file: 3_heap/1_heap/heap.ipynb
-  #           - file: 3_heap/2_dijkstra/dijkstra.ipynb
-  #       - file: 4_kruskal/kruskal.ipynb
-  #       - file: 5_couplage/couplage.ipynb
-  #       - file: 2_arbre_graphe/qcm.md
-  #         title: QCM Graphes
-  #     - file: 2_arbre_graphe/exercices.md
-  #       sections:
-  #       - td: "TD : Définitions sur les graphes"
-  #         file: graphe/def/option/td/td_graph_def.pdf
-  #       - file: 2_arbre_graphe/1_representation/representation_devoir.ipynb
-  #       - td: "TD : Parcours de graphe"
-  #         file: graphe/def/option/td/td_graphes_parcours.pdf
-  #       - td: "TD : Kruskal, Dijkstra, couplages"
-  #         file: graphe/heap/td/td_heap.pdf
-  #       - file: tp/tp_tsp/tp_tsp.ipynb
-  #       - td: "TD : Kruskal, Dijkstra, couplages"
-  #         file: graphe/td_kruskal_dijkstra_couplage/td_kruskal_dijkstra_couplage.pdf
   # - caption: Langages et automates
   #   chapters:
   #     - menu: Cours
