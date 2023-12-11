@@ -109,42 +109,13 @@ parts:
         sections:
         - slides: 'Langages réguliers'
           file: langage/langage/cours/langage.pdf
+        - slides: 'Automates finis'
+          file: langage/automate/cours/automate.pdf
       - menu: Exercices
         sections:
         - td: "TD : Langages réguliers"
           file: langage/langage/cours/td/td_langage.pdf
-  # - caption: Langages et automates
-  #   chapters:
-  #     - menu: Cours
-  #       sections:
-  #       - file: 6_langage/langage.ipynb
-  #       - file: 7_automate/cours/automate.ipynb
-  #       - slides: Équivalence des langages rationnels et reconnaissables
-  #         file: langage/kleene/cours/kleene.pdf
-  #       - td: "Résumé langages et automates"
-  #         file: langage/resume/resume.pdf
-  #     - menu: Exercices
-  #       sections: 
-  #       - td: "TD : Langages rationnels"
-  #         file: langage/langage/cours/td/td_langage.pdf
-  #       - td: "TD : Automates"
-  #         file: langage/automate/td/td_automate.pdf
-  #       - td: "TD : Équivalence des langages rationnels et reconnaissables"
-  #         file: langage/kleene/td/td_kleene.pdf
-  # - caption: Logique
-  #   chapters:
-  #     - menu: Cours
-  #       sections:
-  #       - slides: Logique propositionnelle (MPSI)
-  #         file: logique/propositionnelle/cours/logique_propositionnelle_mp.pdf
-  #       - slides: Déduction naturelle
-  #         file: logique/deduction/cours/deduction.pdf
-  #     - menu: Exercices
-  #       sections:
-  #       - td: "TD : Logique propositionnelle (MPSI)"
-  #         file: logique/propositionnelle/td/td_logique.pdf
-  #       - td: "TD : Déduction naturelle"
-  #         file: logique/deduction/td/td_deduction.pdf
+
   # - caption: Révisions
   #   chapters:
   #     - url: https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/x_facteur.pdf
