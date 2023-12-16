@@ -24,6 +24,12 @@ parts:
             file: ocaml/revision/td_revisions_ccinp23_cs23.pdf
           - td: "Copie élève CCS 2023"
             file: ocaml/revision/ccs23_eleve.pdf
+      - menu: Résumés de cours
+        sections:
+          - td: "Résumé : Tas et file de priorité"
+            file: graphe/heap/resume/resume_heap.pdf
+          - file: resume_lang.pdf
+            title: "Résumé langage et automate"
       # - file: ds/ds_dm.md
       #   sections:
       #     - url: https://fortierq-notes-app-ctedub.streamlit.app
