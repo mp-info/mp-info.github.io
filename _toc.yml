@@ -29,7 +29,7 @@ parts:
           - td: "Résumé : Tas et file de priorité"
             file: graphe/heap/resume/resume_heap.pdf
           - file: resume_lang.pdf
-            title: "Résumé langage et automate"
+            td: "Résumé langage et automate"
       # - file: ds/ds_dm.md
       #   sections:
       #     - url: https://fortierq-notes-app-ctedub.streamlit.app
