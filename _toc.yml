@@ -122,7 +122,7 @@ parts:
         - td: "TD : Langages réguliers"
           file: langage/langage/cours/td/td_langage.pdf
         - td: "TD : Automates finis"
-          file: langage/automate/cours/td/td_automate.pdf
+          file: langage/automate/td/td_automate.pdf
   # - caption: Révisions
   #   chapters:
   #     - url: https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/x_facteur.pdf
