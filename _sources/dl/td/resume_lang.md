@@ -1,4 +1,4 @@
-# Résumé langage et automate
+# Résumé : langage et automate
 
 <script>
     $(function() {

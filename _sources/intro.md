@@ -3,11 +3,18 @@
 <div id="" style="border-style:dotted; border-width:1px; overflow:scroll; height:100px;">
 <center><b>Dernières modifications</b></center>
 <ul>
+<li>Ajout des corrigés pour la préparation du DS 2</li>
 <li>Ajout des corrigés pour la préparation du DS 1</li>
 <li>Rentrée 2023-2024</li>
 </ul>
 </div> 
 <br />
+
+**Programme DS 2** :  
+- Tas et file de priorité
+- Langages réguliers
+- Automates finis
+(pas Équivalence régulier et reconnaissable)
 
 <details>
 <summary>Option informatique aux concours</summary>

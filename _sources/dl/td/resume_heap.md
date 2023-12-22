@@ -1,4 +1,4 @@
-# Résumé : Tas et file de priorité
+# Résumé : tas et file de priorité
 
 <script>
     $(function() {
