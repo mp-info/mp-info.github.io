@@ -26,10 +26,10 @@ parts:
             file: ocaml/revision/ccs23_eleve.pdf
       - menu: Résumés de cours
         sections:
-          - td: "Résumé : Tas et file de priorité"
+          - td: "Résumé : tas et file de priorité"
             file: graphe/heap/resume/resume_heap.pdf
           - file: resume_lang.pdf
-            td: "Résumé langage et automate"
+            td: "Résumé : langage et automate"
       # - file: ds/ds_dm.md
       #   sections:
       #     - url: https://fortierq-notes-app-ctedub.streamlit.app
