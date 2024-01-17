@@ -10,12 +10,6 @@
 </div> 
 <br />
 
-**Programme DS 2** :  
-- Tas et file de priorité
-- Langages réguliers
-- Automates finis (lemme de l'étoile seulement pour MP*, pas MP)  
-(pas Équivalence régulier et reconnaissable)
-
 <details>
 <summary>Option informatique aux concours</summary>
 
