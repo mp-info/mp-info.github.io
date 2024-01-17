@@ -118,14 +118,14 @@ parts:
         - slides: 'Automates finis'
           file: langage/automate/cours/automate.pdf
         - slides: "Équivalence des langages rationnels et reconnaissables"
-          file: langage/kleene/cours/kleene.pdfsrc/langage/kleene/cours/kleene.pdf
+          file: langage/kleene/cours/kleene.pdf
       - menu: Exercices
         sections:
         - td: "TD : Langages réguliers"
           file: langage/langage/cours/td/td_langage.pdf
         - td: "TD : Automates finis"
           file: langage/automate/td/td_automate.pdf
-  # - caption: Révisions
+  # - caption: Révisionssrc/langage/kleene/cours/kleene.pdf
   #   chapters:
   #     - url: https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/x_facteur.pdf
   #       title: "XENS 2021 : Facteurs"
