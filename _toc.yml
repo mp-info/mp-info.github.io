@@ -117,8 +117,8 @@ parts:
           file: langage/langage/cours/langage.pdf
         - slides: 'Automates finis'
           file: langage/automate/cours/automate.pdf
-        - slide: "Équivalence des langages rationnels et reconnaissables"
-          file: langage/kleene/cours/kleene.pdf
+        - slides: "Équivalence des langages rationnels et reconnaissables"
+          file: langage/kleene/cours/kleene.pdfsrc/langage/kleene/cours/kleene.pdf
       - menu: Exercices
         sections:
         - td: "TD : Langages réguliers"
