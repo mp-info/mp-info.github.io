@@ -14,7 +14,7 @@ parts:
       - td: "DM 1 corrigé : Centrale 2021"
         file: centrale_21.pdf
       - td: "DS 2 corrigé"
-        file: ds/mp/automate/cs_22/ds_e3a_cs22.pdf
+        file: ds_e3a_cs22.pdf
   - caption: Généralités
     chapters:
       - menu: Révisions OCaml
