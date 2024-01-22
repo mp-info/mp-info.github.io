@@ -4,7 +4,7 @@
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
         button_3 = button_cor(
-            'https://raw.githubusercontent.com/fortierq/cours/main/ds/mp/automate/cs_22/ds_e3a_cs22.pdf',
+            'https://raw.githubusercontent.com/fortierq/cours/main/ds_e3a_cs22.pdf',
             '3',
             'button_3'
         );
