@@ -4,8 +4,8 @@ format: jb-book
 root: intro
 options:
   numbered: True
-parts:&
-  - caption: DS et DM
+parts:
+  - caption: "DS et DM"
     chapters:
       - title: Détail des notes
         url: https://fortierq-notes-app-ctedub.streamlit.app
@@ -19,7 +19,7 @@ parts:&
     chapters:
       - menu: Révisions OCaml
         sections:
-          - slides: Révisions OCaml
+          - slides: "Révisions OCaml"
             file: ocaml/revision/revisions_ocaml.pdf
           - file: 1_revisions/ocaml.ipynb
           - td: "TD : CCINP 2023 + CCS 2023"
@@ -60,7 +60,7 @@ parts:&
   #   chapters:
   #     - url: https://fortierq-mp-info-notes-grade-n9onka.streamlit.app
   #       title: Notes et classements
-  - caption: Rappels sur les graphes
+  - caption: "Rappels sur les graphes"
     chapters:
       - menu: Cours
         sections:
