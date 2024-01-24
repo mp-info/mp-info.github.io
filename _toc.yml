@@ -4,7 +4,7 @@ format: jb-book
 root: intro
 options:
   numbered: True
-parts:
+parts:&
   - caption: DS et DM
     chapters:
       - title: Détail des notes
@@ -23,8 +23,8 @@ parts:
             file: ocaml/revision/revisions_ocaml.pdf
           - file: 1_revisions/ocaml.ipynb
           - td: "TD : CCINP 2023 + CCS 2023"
-            file: ocaml/revision/td_revisions_ccinp23_cs23.pdf
           - td: "Copie élève CCS 2023"
+            file: ocaml/revision/td_revisions_ccinp23_cs23.pdf
             file: ocaml/revision/ccs23_eleve.pdf
       - menu: Résumés de cours
         sections:
@@ -127,6 +127,8 @@ parts:
           file: langage/langage/cours/td/td_langage.pdf
         - td: "TD : Automates finis"
           file: langage/automate/td/td_automate.pdf
+        - td: "TD : Équivalence des langages rationnels et reconnaissables"
+          file: langage/kleene/td/td_kleene.pdf
   # - caption: Révisionssrc/langage/kleene/cours/kleene.pdf
   #   chapters:
   #     - url: https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/x_facteur.pdf
