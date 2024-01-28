@@ -124,6 +124,8 @@ parts:
           file: langage/kleene/cours/kleene.pdf
       - menu: Exercices
         sections:
+        - title: "Exercices ENS info corrigés"
+          file: exos_ens_langage.pdf
         - td: "TD : Langages réguliers"
           file: langage/langage/cours/td/td_langage.pdf
         - td: "TD : Automates finis"
