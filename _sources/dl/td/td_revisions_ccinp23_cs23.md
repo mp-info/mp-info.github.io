@@ -3,16 +3,16 @@
 <script>
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
-        button_4 = button_cor(
+        button_5 = button_cor(
             'https://raw.githubusercontent.com/fortierq/cours/main/ocaml/revision/td_revisions_ccinp23_cs23.pdf',
-            '4',
-            'button_4'
+            '5',
+            'button_5'
         );
     });
 </script>
 
 ```{margin}
-<input type="button" id="button_4" onclick="button_4.switch()" />
+<input type="button" id="button_5" onclick="button_5.switch()" />
 ```
 
-<iframe id="4" height=1100 width=100% allowfullscreen></iframe>
+<iframe id="5" height=1100 width=100% allowfullscreen></iframe>

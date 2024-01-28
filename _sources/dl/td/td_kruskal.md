@@ -3,16 +3,16 @@
 <script>
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
-        button_10 = button_cor(
+        button_11 = button_cor(
             'https://raw.githubusercontent.com/fortierq/cours/main/graphe/mst/td/td_kruskal.pdf',
-            '10',
-            'button_10'
+            '11',
+            'button_11'
         );
     });
 </script>
 
 ```{margin}
-<input type="button" id="button_10" onclick="button_10.switch()" />
+<input type="button" id="button_11" onclick="button_11.switch()" />
 ```
 
-<iframe id="10" height=1100 width=100% allowfullscreen></iframe>
+<iframe id="11" height=1100 width=100% allowfullscreen></iframe>
