@@ -16,7 +16,7 @@ parts:
       - td: "DS 2 corrigé"
         file: ds_e3a_cs22.pdf
       - td: "DM 2 corrigé : Centrale 2017"
-        file: cs17_cor.pdf
+        file: cs17.pdf
   - caption: Généralités
     chapters:
       - menu: Révisions OCaml
