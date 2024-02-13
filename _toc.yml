@@ -146,6 +146,8 @@ parts:
         sections:
         - td: "TD : Logique propositionnelle"
           file: logique/propositionnelle/td/td_logique.pdf
+        - td: "TD : Déduction naturelle"
+          file: logique/deduction/td/td_deduction.pdf
   # - caption: Révisionssrc/langage/kleene/cours/kleene.pdf
   #   chapters:
   #     - url: https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/x_facteur.pdf
