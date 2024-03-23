@@ -4,7 +4,7 @@
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
         button_5 = button_cor(
-            'https://raw.githubusercontent.com/fortierq/cours/main/ds/mp/deduction/ds_deduction.pdf',
+            'https://raw.githubusercontent.com/fortierq/cours/main/ds_deduction.pdf',
             '5',
             'button_5'
         );
