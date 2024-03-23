@@ -3,16 +3,16 @@
 <script>
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
-        button_13 = button_cor(
+        button_14 = button_cor(
             'https://raw.githubusercontent.com/fortierq/cours/main/graphe/heap/td/td_heap.pdf',
-            '13',
-            'button_13'
+            '14',
+            'button_14'
         );
     });
 </script>
 
 ```{margin}
-<input type="button" id="button_13" onclick="button_13.switch()" />
+<input type="button" id="button_14" onclick="button_14.switch()" />
 ```
 
-<iframe id="13" height=1100 width=100% allowfullscreen></iframe>
+<iframe id="14" height=1100 width=100% allowfullscreen></iframe>

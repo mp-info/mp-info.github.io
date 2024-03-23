@@ -3,16 +3,16 @@
 <script>
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
-        button_14 = button_cor(
+        button_15 = button_cor(
             'https://raw.githubusercontent.com/fortierq/cours/main/langage/langage/cours/td/td_langage.pdf',
-            '14',
-            'button_14'
+            '15',
+            'button_15'
         );
     });
 </script>
 
 ```{margin}
-<input type="button" id="button_14" onclick="button_14.switch()" />
+<input type="button" id="button_15" onclick="button_15.switch()" />
 ```
 
-<iframe id="14" height=1100 width=100% allowfullscreen></iframe>
+<iframe id="15" height=1100 width=100% allowfullscreen></iframe>
