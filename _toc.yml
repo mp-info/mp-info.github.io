@@ -18,7 +18,7 @@ parts:
       - td: "DM 2 corrigé : Centrale 2017"
         file: cs17.pdf
       - td: "DS 3 corrigé"
-        file: ds/mp/deduction/ds_deduction.pdf
+        file: ds_deduction.pdf
   - caption: Généralités
     chapters:
       - menu: Révisions OCaml
