@@ -33,10 +33,8 @@ parts:
             file: ocaml/revision/ccs23_eleve.pdf
       - menu: Résumés de cours
         sections:
-          - td: "Résumé : tas et file de priorité"
-            file: graphe/heap/resume/resume_heap.pdf
-          - file: resume_lang.pdf
-            td: "Résumé : langage et automate"
+          - td: "Résumé option info"
+            file: resume_option.pdf
       # - file: ds/ds_dm.md
       #   sections:
       #     - url: https://fortierq-notes-app-ctedub.streamlit.app
@@ -156,13 +154,9 @@ parts:
         sections:
         - slides: Backtracking
           file: algo/backtracking/backtracking.pdf
-  # - caption: Révisionssrc/langage/kleene/cours/kleene.pdf
-  #   chapters:
-  #     - url: https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/x_facteur.pdf
-  #       title: "XENS 2021 : Facteurs"
-  #     - url: https://raw.githubusercontent.com/mp-info/mp-info.github.io/main/files/x_facteur_cor.pdf
-  #       title: "XENS 2021 : Facteurs corrigé"
-  #     - td: "TD : Révisions MP"
-  #       file: "revisions/option/td/td_revision_option.pdf"
-  #     - tp: revisions/option/tp/revisions_ocaml.ipynb
-  #     - cor: revisions/option/tp/revisions_ocaml_cor.ipynb
+  - caption: Révisions
+    chapters:
+      - menu: Exercices
+        sections:
+        - td: "Arbres croissants (X-ENS 2014)"
+          file: xens14.pdf
