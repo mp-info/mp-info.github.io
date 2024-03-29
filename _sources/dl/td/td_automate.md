@@ -3,16 +3,16 @@
 <script>
     $(function() {
         document.getElementById("main-content").style.maxWidth = "90%";
-        button_16 = button_cor(
+        button_15 = button_cor(
             'https://raw.githubusercontent.com/fortierq/cours/main/langage/automate/td/td_automate.pdf',
-            '16',
-            'button_16'
+            '15',
+            'button_15'
         );
     });
 </script>
 
 ```{margin}
-<input type="button" id="button_16" onclick="button_16.switch()" />
+<input type="button" id="button_15" onclick="button_15.switch()" />
 ```
 
-<iframe id="16" height=1100 width=100% allowfullscreen></iframe>
+<iframe id="15" height=1100 width=100% allowfullscreen></iframe>
