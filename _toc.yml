@@ -7,8 +7,6 @@ options:
 parts:
   - caption: DS et DM
     chapters:
-      - title: Détail des notes
-        url: https://fortierq-notes-app-ctedub.streamlit.app
       - td: "DS 1 corrigé : Centrale 2015"
         file: centrale_2015.pdf
       - td: "DM 1 corrigé : Centrale 2021"
